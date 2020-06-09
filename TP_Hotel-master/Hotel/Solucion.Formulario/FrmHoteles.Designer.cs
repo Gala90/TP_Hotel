@@ -37,34 +37,34 @@
             // 
             // btnAltaHotel
             // 
-            this.btnAltaHotel.Location = new System.Drawing.Point(262, 52);
+            this.btnAltaHotel.Location = new System.Drawing.Point(74, 52);
             this.btnAltaHotel.Name = "btnAltaHotel";
-            this.btnAltaHotel.Size = new System.Drawing.Size(75, 23);
+            this.btnAltaHotel.Size = new System.Drawing.Size(174, 23);
             this.btnAltaHotel.TabIndex = 0;
             this.btnAltaHotel.Text = "Alta";
             this.btnAltaHotel.UseVisualStyleBackColor = true;
             // 
             // btnBajaHotel
             // 
-            this.btnBajaHotel.Location = new System.Drawing.Point(262, 118);
+            this.btnBajaHotel.Location = new System.Drawing.Point(74, 104);
             this.btnBajaHotel.Name = "btnBajaHotel";
-            this.btnBajaHotel.Size = new System.Drawing.Size(75, 23);
+            this.btnBajaHotel.Size = new System.Drawing.Size(174, 23);
             this.btnBajaHotel.TabIndex = 1;
             this.btnBajaHotel.Text = "Baja";
             this.btnBajaHotel.UseVisualStyleBackColor = true;
             // 
             // btnModifHotel
             // 
-            this.btnModifHotel.Location = new System.Drawing.Point(262, 196);
+            this.btnModifHotel.Location = new System.Drawing.Point(74, 159);
             this.btnModifHotel.Name = "btnModifHotel";
-            this.btnModifHotel.Size = new System.Drawing.Size(75, 23);
+            this.btnModifHotel.Size = new System.Drawing.Size(174, 23);
             this.btnModifHotel.TabIndex = 2;
             this.btnModifHotel.Text = "Modificacion";
             this.btnModifHotel.UseVisualStyleBackColor = true;
             // 
             // btnVolverHotel
             // 
-            this.btnVolverHotel.Location = new System.Drawing.Point(595, 285);
+            this.btnVolverHotel.Location = new System.Drawing.Point(26, 300);
             this.btnVolverHotel.Name = "btnVolverHotel";
             this.btnVolverHotel.Size = new System.Drawing.Size(75, 23);
             this.btnVolverHotel.TabIndex = 3;
@@ -73,9 +73,9 @@
             // 
             // BtnConsulHotel
             // 
-            this.BtnConsulHotel.Location = new System.Drawing.Point(262, 267);
+            this.BtnConsulHotel.Location = new System.Drawing.Point(74, 219);
             this.BtnConsulHotel.Name = "BtnConsulHotel";
-            this.BtnConsulHotel.Size = new System.Drawing.Size(75, 23);
+            this.BtnConsulHotel.Size = new System.Drawing.Size(174, 23);
             this.BtnConsulHotel.TabIndex = 4;
             this.BtnConsulHotel.Text = "Consulta";
             this.BtnConsulHotel.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(324, 359);
             this.Controls.Add(this.BtnConsulHotel);
             this.Controls.Add(this.btnVolverHotel);
             this.Controls.Add(this.btnModifHotel);

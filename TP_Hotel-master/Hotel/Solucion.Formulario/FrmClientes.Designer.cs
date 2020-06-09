@@ -36,25 +36,25 @@
             // 
             // BtnAltaCliente
             // 
-            this.BtnAltaCliente.Location = new System.Drawing.Point(244, 38);
+            this.BtnAltaCliente.Location = new System.Drawing.Point(61, 56);
             this.BtnAltaCliente.Name = "BtnAltaCliente";
-            this.BtnAltaCliente.Size = new System.Drawing.Size(131, 45);
+            this.BtnAltaCliente.Size = new System.Drawing.Size(262, 50);
             this.BtnAltaCliente.TabIndex = 0;
             this.BtnAltaCliente.Text = "Alta";
             this.BtnAltaCliente.UseVisualStyleBackColor = true;
             // 
             // BtnConsutaCliente
             // 
-            this.BtnConsutaCliente.Location = new System.Drawing.Point(244, 249);
+            this.BtnConsutaCliente.Location = new System.Drawing.Point(61, 221);
             this.BtnConsutaCliente.Name = "BtnConsutaCliente";
-            this.BtnConsutaCliente.Size = new System.Drawing.Size(131, 42);
+            this.BtnConsutaCliente.Size = new System.Drawing.Size(262, 50);
             this.BtnConsutaCliente.TabIndex = 1;
             this.BtnConsutaCliente.Text = "Consulta";
             this.BtnConsutaCliente.UseVisualStyleBackColor = true;
             // 
             // BtnVolverCliente
             // 
-            this.BtnVolverCliente.Location = new System.Drawing.Point(602, 293);
+            this.BtnVolverCliente.Location = new System.Drawing.Point(27, 325);
             this.BtnVolverCliente.Name = "BtnVolverCliente";
             this.BtnVolverCliente.Size = new System.Drawing.Size(75, 23);
             this.BtnVolverCliente.TabIndex = 3;
@@ -63,9 +63,9 @@
             // 
             // btnModifCliente
             // 
-            this.btnModifCliente.Location = new System.Drawing.Point(244, 132);
+            this.btnModifCliente.Location = new System.Drawing.Point(61, 134);
             this.btnModifCliente.Name = "btnModifCliente";
-            this.btnModifCliente.Size = new System.Drawing.Size(131, 52);
+            this.btnModifCliente.Size = new System.Drawing.Size(262, 52);
             this.btnModifCliente.TabIndex = 4;
             this.btnModifCliente.Text = "Modificar";
             this.btnModifCliente.UseVisualStyleBackColor = true;
@@ -74,7 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(402, 431);
             this.Controls.Add(this.btnModifCliente);
             this.Controls.Add(this.BtnVolverCliente);
             this.Controls.Add(this.BtnConsutaCliente);
