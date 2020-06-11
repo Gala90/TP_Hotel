@@ -37,25 +37,25 @@
             // 
             // BtnAltaReserva
             // 
-            this.BtnAltaReserva.Location = new System.Drawing.Point(266, 49);
+            this.BtnAltaReserva.Location = new System.Drawing.Point(62, 49);
             this.BtnAltaReserva.Name = "BtnAltaReserva";
-            this.BtnAltaReserva.Size = new System.Drawing.Size(135, 45);
+            this.BtnAltaReserva.Size = new System.Drawing.Size(224, 45);
             this.BtnAltaReserva.TabIndex = 0;
             this.BtnAltaReserva.Text = "Alta";
             this.BtnAltaReserva.UseVisualStyleBackColor = true;
             // 
             // BtnConsultaReserva
             // 
-            this.BtnConsultaReserva.Location = new System.Drawing.Point(266, 268);
+            this.BtnConsultaReserva.Location = new System.Drawing.Point(62, 295);
             this.BtnConsultaReserva.Name = "BtnConsultaReserva";
-            this.BtnConsultaReserva.Size = new System.Drawing.Size(135, 47);
+            this.BtnConsultaReserva.Size = new System.Drawing.Size(224, 47);
             this.BtnConsultaReserva.TabIndex = 2;
             this.BtnConsultaReserva.Text = "Consulta";
             this.BtnConsultaReserva.UseVisualStyleBackColor = true;
             // 
             // BtnVolverReserva
             // 
-            this.BtnVolverReserva.Location = new System.Drawing.Point(572, 292);
+            this.BtnVolverReserva.Location = new System.Drawing.Point(26, 405);
             this.BtnVolverReserva.Name = "BtnVolverReserva";
             this.BtnVolverReserva.Size = new System.Drawing.Size(75, 23);
             this.BtnVolverReserva.TabIndex = 3;
@@ -64,18 +64,18 @@
             // 
             // btnBajaReserva
             // 
-            this.btnBajaReserva.Location = new System.Drawing.Point(266, 120);
+            this.btnBajaReserva.Location = new System.Drawing.Point(62, 122);
             this.btnBajaReserva.Name = "btnBajaReserva";
-            this.btnBajaReserva.Size = new System.Drawing.Size(135, 52);
+            this.btnBajaReserva.Size = new System.Drawing.Size(224, 52);
             this.btnBajaReserva.TabIndex = 4;
             this.btnBajaReserva.Text = "Baja";
             this.btnBajaReserva.UseVisualStyleBackColor = true;
             // 
             // btnModifReserva
             // 
-            this.btnModifReserva.Location = new System.Drawing.Point(266, 197);
+            this.btnModifReserva.Location = new System.Drawing.Point(62, 207);
             this.btnModifReserva.Name = "btnModifReserva";
-            this.btnModifReserva.Size = new System.Drawing.Size(135, 52);
+            this.btnModifReserva.Size = new System.Drawing.Size(224, 52);
             this.btnModifReserva.TabIndex = 5;
             this.btnModifReserva.Text = "Modificar";
             this.btnModifReserva.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(371, 455);
             this.Controls.Add(this.btnModifReserva);
             this.Controls.Add(this.btnBajaReserva);
             this.Controls.Add(this.BtnVolverReserva);
