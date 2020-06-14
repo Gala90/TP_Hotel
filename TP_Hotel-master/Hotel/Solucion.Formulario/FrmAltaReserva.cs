@@ -16,5 +16,30 @@ namespace Solucion.Formulario
         {
             InitializeComponent();
         }
+
+        private void FrmAltaReserva_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -33,11 +33,12 @@
             this.BtnVolverReserva = new System.Windows.Forms.Button();
             this.btnBajaReserva = new System.Windows.Forms.Button();
             this.btnModifReserva = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnAltaReserva
             // 
-            this.BtnAltaReserva.Location = new System.Drawing.Point(62, 49);
+            this.BtnAltaReserva.Location = new System.Drawing.Point(58, 97);
             this.BtnAltaReserva.Name = "BtnAltaReserva";
             this.BtnAltaReserva.Size = new System.Drawing.Size(224, 45);
             this.BtnAltaReserva.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // BtnConsultaReserva
             // 
-            this.BtnConsultaReserva.Location = new System.Drawing.Point(62, 295);
+            this.BtnConsultaReserva.Location = new System.Drawing.Point(58, 343);
             this.BtnConsultaReserva.Name = "BtnConsultaReserva";
             this.BtnConsultaReserva.Size = new System.Drawing.Size(224, 47);
             this.BtnConsultaReserva.TabIndex = 2;
@@ -55,7 +56,7 @@
             // 
             // BtnVolverReserva
             // 
-            this.BtnVolverReserva.Location = new System.Drawing.Point(26, 405);
+            this.BtnVolverReserva.Location = new System.Drawing.Point(22, 453);
             this.BtnVolverReserva.Name = "BtnVolverReserva";
             this.BtnVolverReserva.Size = new System.Drawing.Size(75, 23);
             this.BtnVolverReserva.TabIndex = 3;
@@ -64,7 +65,7 @@
             // 
             // btnBajaReserva
             // 
-            this.btnBajaReserva.Location = new System.Drawing.Point(62, 122);
+            this.btnBajaReserva.Location = new System.Drawing.Point(58, 170);
             this.btnBajaReserva.Name = "btnBajaReserva";
             this.btnBajaReserva.Size = new System.Drawing.Size(224, 52);
             this.btnBajaReserva.TabIndex = 4;
@@ -73,18 +74,29 @@
             // 
             // btnModifReserva
             // 
-            this.btnModifReserva.Location = new System.Drawing.Point(62, 207);
+            this.btnModifReserva.Location = new System.Drawing.Point(58, 255);
             this.btnModifReserva.Name = "btnModifReserva";
             this.btnModifReserva.Size = new System.Drawing.Size(224, 52);
             this.btnModifReserva.TabIndex = 5;
             this.btnModifReserva.Text = "Modificar";
             this.btnModifReserva.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(27, 30);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(84, 20);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Reservas";
+            // 
             // FrmReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 455);
+            this.ClientSize = new System.Drawing.Size(337, 506);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnModifReserva);
             this.Controls.Add(this.btnBajaReserva);
             this.Controls.Add(this.BtnVolverReserva);
@@ -93,6 +105,7 @@
             this.Name = "FrmReservas";
             this.Text = "Form2";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -103,5 +116,6 @@
         private System.Windows.Forms.Button BtnVolverReserva;
         private System.Windows.Forms.Button btnBajaReserva;
         private System.Windows.Forms.Button btnModifReserva;
+        private System.Windows.Forms.Label label7;
     }
 }

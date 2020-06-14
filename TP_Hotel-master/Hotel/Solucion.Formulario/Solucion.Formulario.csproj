@@ -69,6 +69,12 @@
     <Compile Include="FrmBajaHotel.Designer.cs">
       <DependentUpon>FrmBajaHotel.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBajaReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBajaReserva.Designer.cs">
+      <DependentUpon>FrmBajaReserva.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsultaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,11 +105,23 @@
     <Compile Include="FrmModificarHotel.Designer.cs">
       <DependentUpon>FrmModificarHotel.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmModificarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarReserva.Designer.cs">
+      <DependentUpon>FrmModificarReserva.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMostrarHoteles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMostrarHoteles.Designer.cs">
       <DependentUpon>FrmMostrarHoteles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarReservas.Designer.cs">
+      <DependentUpon>FrmMostrarReservas.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmReservas.cs">
       <SubType>Form</SubType>
@@ -134,6 +152,9 @@
     <EmbeddedResource Include="FrmBajaHotel.resx">
       <DependentUpon>FrmBajaHotel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBajaReserva.resx">
+      <DependentUpon>FrmBajaReserva.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultaCliente.resx">
       <DependentUpon>FrmConsultaCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,8 +170,14 @@
     <EmbeddedResource Include="FrmModificarHotel.resx">
       <DependentUpon>FrmModificarHotel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarReserva.resx">
+      <DependentUpon>FrmModificarReserva.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarHoteles.resx">
       <DependentUpon>FrmMostrarHoteles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarReservas.resx">
+      <DependentUpon>FrmMostrarReservas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReservas.resx">
       <DependentUpon>FrmReservas.cs</DependentUpon>

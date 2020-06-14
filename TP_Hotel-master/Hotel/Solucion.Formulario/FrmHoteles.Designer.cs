@@ -33,11 +33,12 @@
             this.btnModifHotel = new System.Windows.Forms.Button();
             this.btnVolverHotel = new System.Windows.Forms.Button();
             this.BtnConsulHotel = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAltaHotel
             // 
-            this.btnAltaHotel.Location = new System.Drawing.Point(74, 52);
+            this.btnAltaHotel.Location = new System.Drawing.Point(67, 70);
             this.btnAltaHotel.Name = "btnAltaHotel";
             this.btnAltaHotel.Size = new System.Drawing.Size(174, 23);
             this.btnAltaHotel.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // btnBajaHotel
             // 
-            this.btnBajaHotel.Location = new System.Drawing.Point(74, 104);
+            this.btnBajaHotel.Location = new System.Drawing.Point(67, 122);
             this.btnBajaHotel.Name = "btnBajaHotel";
             this.btnBajaHotel.Size = new System.Drawing.Size(174, 23);
             this.btnBajaHotel.TabIndex = 1;
@@ -55,7 +56,7 @@
             // 
             // btnModifHotel
             // 
-            this.btnModifHotel.Location = new System.Drawing.Point(74, 159);
+            this.btnModifHotel.Location = new System.Drawing.Point(67, 177);
             this.btnModifHotel.Name = "btnModifHotel";
             this.btnModifHotel.Size = new System.Drawing.Size(174, 23);
             this.btnModifHotel.TabIndex = 2;
@@ -64,7 +65,7 @@
             // 
             // btnVolverHotel
             // 
-            this.btnVolverHotel.Location = new System.Drawing.Point(26, 300);
+            this.btnVolverHotel.Location = new System.Drawing.Point(19, 318);
             this.btnVolverHotel.Name = "btnVolverHotel";
             this.btnVolverHotel.Size = new System.Drawing.Size(75, 23);
             this.btnVolverHotel.TabIndex = 3;
@@ -73,18 +74,29 @@
             // 
             // BtnConsulHotel
             // 
-            this.BtnConsulHotel.Location = new System.Drawing.Point(74, 219);
+            this.BtnConsulHotel.Location = new System.Drawing.Point(67, 237);
             this.BtnConsulHotel.Name = "BtnConsulHotel";
             this.BtnConsulHotel.Size = new System.Drawing.Size(174, 23);
             this.BtnConsulHotel.TabIndex = 4;
             this.BtnConsulHotel.Text = "Consulta";
             this.BtnConsulHotel.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(22, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 20);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Hoteles";
+            // 
             // FrmHoteles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(324, 359);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.BtnConsulHotel);
             this.Controls.Add(this.btnVolverHotel);
             this.Controls.Add(this.btnModifHotel);
@@ -93,6 +105,7 @@
             this.Name = "FrmHoteles";
             this.Text = "Form2";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -103,5 +116,6 @@
         private System.Windows.Forms.Button btnModifHotel;
         private System.Windows.Forms.Button btnVolverHotel;
         private System.Windows.Forms.Button BtnConsulHotel;
+        private System.Windows.Forms.Label label7;
     }
 }

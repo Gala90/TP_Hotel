@@ -30,163 +30,175 @@
         {
             this.comboID = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textNombre = new System.Windows.Forms.TextBox();
-            this.textApellido = new System.Windows.Forms.TextBox();
-            this.textdireccion = new System.Windows.Forms.TextBox();
-            this.texttelefono = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.textemail = new System.Windows.Forms.TextBox();
-            this.Nombre = new System.Windows.Forms.Label();
-            this.Apellido = new System.Windows.Forms.Label();
-            this.Direccion = new System.Windows.Forms.Label();
-            this.Telefono = new System.Windows.Forms.Label();
-            this.Email = new System.Windows.Forms.Label();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.btnAceptar = new System.Windows.Forms.Button();
+            this.textTelefono = new System.Windows.Forms.TextBox();
+            this.textDireccion = new System.Windows.Forms.TextBox();
+            this.textApellido = new System.Windows.Forms.TextBox();
+            this.textNombre = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboID
             // 
             this.comboID.FormattingEnabled = true;
-            this.comboID.Location = new System.Drawing.Point(119, 23);
+            this.comboID.Location = new System.Drawing.Point(93, 80);
             this.comboID.Name = "comboID";
-            this.comboID.Size = new System.Drawing.Size(121, 21);
+            this.comboID.Size = new System.Drawing.Size(103, 21);
             this.comboID.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 31);
+            this.label1.Location = new System.Drawing.Point(35, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "ID";
             // 
-            // textNombre
+            // label7
             // 
-            this.textNombre.Location = new System.Drawing.Point(119, 86);
-            this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(100, 20);
-            this.textNombre.TabIndex = 2;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(22, 27);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(143, 20);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Modificar Cliente";
             // 
-            // textApellido
+            // label5
             // 
-            this.textApellido.Location = new System.Drawing.Point(119, 146);
-            this.textApellido.Name = "textApellido";
-            this.textApellido.Size = new System.Drawing.Size(100, 20);
-            this.textApellido.TabIndex = 3;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(38, 352);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "Email";
             // 
-            // textdireccion
+            // label4
             // 
-            this.textdireccion.Location = new System.Drawing.Point(119, 206);
-            this.textdireccion.Name = "textdireccion";
-            this.textdireccion.Size = new System.Drawing.Size(100, 20);
-            this.textdireccion.TabIndex = 4;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(35, 292);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Telefono";
             // 
-            // texttelefono
+            // label3
             // 
-            this.texttelefono.Location = new System.Drawing.Point(388, 85);
-            this.texttelefono.Name = "texttelefono";
-            this.texttelefono.Size = new System.Drawing.Size(100, 20);
-            this.texttelefono.TabIndex = 5;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(34, 232);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Direccion";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(34, 179);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "Apellido";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(35, 130);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "Nombre";
             // 
             // textemail
             // 
-            this.textemail.Location = new System.Drawing.Point(388, 145);
+            this.textemail.Location = new System.Drawing.Point(96, 346);
             this.textemail.Name = "textemail";
             this.textemail.Size = new System.Drawing.Size(100, 20);
-            this.textemail.TabIndex = 6;
+            this.textemail.TabIndex = 36;
             // 
-            // Nombre
+            // textTelefono
             // 
-            this.Nombre.AutoSize = true;
-            this.Nombre.Location = new System.Drawing.Point(27, 92);
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Size = new System.Drawing.Size(44, 13);
-            this.Nombre.TabIndex = 7;
-            this.Nombre.Text = "Nombre";
+            this.textTelefono.Location = new System.Drawing.Point(96, 289);
+            this.textTelefono.Name = "textTelefono";
+            this.textTelefono.Size = new System.Drawing.Size(100, 20);
+            this.textTelefono.TabIndex = 35;
             // 
-            // Apellido
+            // textDireccion
             // 
-            this.Apellido.AutoSize = true;
-            this.Apellido.Location = new System.Drawing.Point(27, 153);
-            this.Apellido.Name = "Apellido";
-            this.Apellido.Size = new System.Drawing.Size(44, 13);
-            this.Apellido.TabIndex = 8;
-            this.Apellido.Text = "Apellido";
+            this.textDireccion.Location = new System.Drawing.Point(96, 225);
+            this.textDireccion.Name = "textDireccion";
+            this.textDireccion.Size = new System.Drawing.Size(100, 20);
+            this.textDireccion.TabIndex = 34;
             // 
-            // Direccion
+            // textApellido
             // 
-            this.Direccion.AutoSize = true;
-            this.Direccion.Location = new System.Drawing.Point(27, 209);
-            this.Direccion.Name = "Direccion";
-            this.Direccion.Size = new System.Drawing.Size(52, 13);
-            this.Direccion.TabIndex = 9;
-            this.Direccion.Text = "Direccion";
+            this.textApellido.Location = new System.Drawing.Point(96, 172);
+            this.textApellido.Name = "textApellido";
+            this.textApellido.Size = new System.Drawing.Size(100, 20);
+            this.textApellido.TabIndex = 33;
             // 
-            // Telefono
+            // textNombre
             // 
-            this.Telefono.AutoSize = true;
-            this.Telefono.Location = new System.Drawing.Point(324, 91);
-            this.Telefono.Name = "Telefono";
-            this.Telefono.Size = new System.Drawing.Size(49, 13);
-            this.Telefono.TabIndex = 10;
-            this.Telefono.Text = "Telefono";
+            this.textNombre.Location = new System.Drawing.Point(96, 124);
+            this.textNombre.Name = "textNombre";
+            this.textNombre.Size = new System.Drawing.Size(100, 20);
+            this.textNombre.TabIndex = 32;
             // 
-            // Email
+            // button3
             // 
-            this.Email.AutoSize = true;
-            this.Email.Location = new System.Drawing.Point(327, 151);
-            this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(32, 13);
-            this.Email.TabIndex = 11;
-            this.Email.Text = "Email";
+            this.button3.Location = new System.Drawing.Point(214, 410);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(84, 24);
+            this.button3.TabIndex = 44;
+            this.button3.Text = "Modificar";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // btnModificar
+            // button2
             // 
-            this.btnModificar.Location = new System.Drawing.Point(119, 291);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
-            this.btnModificar.TabIndex = 12;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(111, 410);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 24);
+            this.button2.TabIndex = 43;
+            this.button2.Text = "Limpiar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnVolver
+            // button1
             // 
-            this.btnVolver.Location = new System.Drawing.Point(606, 290);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(75, 23);
-            this.btnVolver.TabIndex = 13;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = true;
-            // 
-            // btnAceptar
-            // 
-            this.btnAceptar.Location = new System.Drawing.Point(305, 290);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 14;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(16, 410);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 24);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "Volver";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FrmModificarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.Email);
-            this.Controls.Add(this.Telefono);
-            this.Controls.Add(this.Direccion);
-            this.Controls.Add(this.Apellido);
-            this.Controls.Add(this.Nombre);
+            this.ClientSize = new System.Drawing.Size(322, 475);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.textemail);
-            this.Controls.Add(this.texttelefono);
-            this.Controls.Add(this.textdireccion);
+            this.Controls.Add(this.textTelefono);
+            this.Controls.Add(this.textDireccion);
             this.Controls.Add(this.textApellido);
             this.Controls.Add(this.textNombre);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboID);
             this.Name = "FrmModificarCliente";
@@ -200,18 +212,19 @@
 
         private System.Windows.Forms.ComboBox comboID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textNombre;
-        private System.Windows.Forms.TextBox textApellido;
-        private System.Windows.Forms.TextBox textdireccion;
-        private System.Windows.Forms.TextBox texttelefono;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textemail;
-        private System.Windows.Forms.Label Nombre;
-        private System.Windows.Forms.Label Apellido;
-        private System.Windows.Forms.Label Direccion;
-        private System.Windows.Forms.Label Telefono;
-        private System.Windows.Forms.Label Email;
-        private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.TextBox textTelefono;
+        private System.Windows.Forms.TextBox textDireccion;
+        private System.Windows.Forms.TextBox textApellido;
+        private System.Windows.Forms.TextBox textNombre;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
