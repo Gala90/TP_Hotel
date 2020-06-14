@@ -51,6 +51,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBajaHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBajaHabitacion.Designer.cs">
+      <DependentUpon>FrmBajaHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarHabitacion.Designer.cs">
+      <DependentUpon>FrmModificarHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltaHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltaHabitacion.Designer.cs">
+      <DependentUpon>FrmAltaHabitacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAltaHotel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,11 +161,17 @@
     <EmbeddedResource Include="FrmAltaCliente.resx">
       <DependentUpon>FrmAltaCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltaHabitacion.resx">
+      <DependentUpon>FrmAltaHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAltaHotel.resx">
       <DependentUpon>FrmAltaHotel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAltaReserva.resx">
       <DependentUpon>FrmAltaReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBajaHabitacion.resx">
+      <DependentUpon>FrmBajaHabitacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBajaHotel.resx">
       <DependentUpon>FrmBajaHotel.cs</DependentUpon>
@@ -166,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHoteles.resx">
       <DependentUpon>FrmHoteles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarHabitacion.resx">
+      <DependentUpon>FrmModificarHabitacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModificarHotel.resx">
       <DependentUpon>FrmModificarHotel.cs</DependentUpon>
