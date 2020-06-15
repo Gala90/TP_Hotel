@@ -41,8 +41,9 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.btnmodificar = new System.Windows.Forms.Button();
-            this.btncancelar = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -156,31 +157,41 @@
             this.comboBox5.Size = new System.Drawing.Size(121, 21);
             this.comboBox5.TabIndex = 32;
             // 
-            // btnmodificar
+            // button3
             // 
-            this.btnmodificar.Location = new System.Drawing.Point(40, 324);
-            this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(75, 23);
-            this.btnmodificar.TabIndex = 33;
-            this.btnmodificar.Text = "Modificar";
-            this.btnmodificar.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(224, 318);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(84, 24);
+            this.button3.TabIndex = 37;
+            this.button3.Text = "Modificar";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // btncancelar
+            // button2
             // 
-            this.btncancelar.Location = new System.Drawing.Point(218, 324);
-            this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(75, 23);
-            this.btncancelar.TabIndex = 34;
-            this.btncancelar.Text = "Cancelar";
-            this.btncancelar.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(110, 318);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 24);
+            this.button2.TabIndex = 36;
+            this.button2.Text = "Limpiar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 318);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 24);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "Volver";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FrmModificarHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 371);
-            this.Controls.Add(this.btncancelar);
-            this.Controls.Add(this.btnmodificar);
+            this.ClientSize = new System.Drawing.Size(331, 377);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
@@ -216,7 +227,8 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Button btnmodificar;
-        private System.Windows.Forms.Button btncancelar;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
