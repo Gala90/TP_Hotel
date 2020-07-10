@@ -136,16 +136,16 @@
             // 
             // btnaceptar
             // 
-            this.btnaceptar.Location = new System.Drawing.Point(204, 345);
+            this.btnaceptar.Location = new System.Drawing.Point(28, 343);
             this.btnaceptar.Name = "btnaceptar";
-            this.btnaceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnaceptar.Size = new System.Drawing.Size(190, 33);
             this.btnaceptar.TabIndex = 10;
             this.btnaceptar.Text = "Aceptar";
             this.btnaceptar.UseVisualStyleBackColor = true;
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.Location = new System.Drawing.Point(108, 345);
+            this.btnlimpiar.Location = new System.Drawing.Point(143, 409);
             this.btnlimpiar.Name = "btnlimpiar";
             this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
             this.btnlimpiar.TabIndex = 11;
@@ -154,7 +154,7 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(11, 345);
+            this.btnVolver.Location = new System.Drawing.Point(28, 409);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 12;
@@ -175,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 407);
+            this.ClientSize = new System.Drawing.Size(275, 461);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnlimpiar);

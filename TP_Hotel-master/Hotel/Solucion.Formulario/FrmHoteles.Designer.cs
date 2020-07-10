@@ -32,54 +32,45 @@
             this.btnBajaHotel = new System.Windows.Forms.Button();
             this.btnModifHotel = new System.Windows.Forms.Button();
             this.btnVolverHotel = new System.Windows.Forms.Button();
-            this.BtnConsulHotel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnAltaHotel
             // 
-            this.btnAltaHotel.Location = new System.Drawing.Point(67, 70);
+            this.btnAltaHotel.Location = new System.Drawing.Point(67, 373);
             this.btnAltaHotel.Name = "btnAltaHotel";
-            this.btnAltaHotel.Size = new System.Drawing.Size(174, 23);
+            this.btnAltaHotel.Size = new System.Drawing.Size(218, 43);
             this.btnAltaHotel.TabIndex = 0;
             this.btnAltaHotel.Text = "Alta";
             this.btnAltaHotel.UseVisualStyleBackColor = true;
             // 
             // btnBajaHotel
             // 
-            this.btnBajaHotel.Location = new System.Drawing.Point(67, 122);
+            this.btnBajaHotel.Location = new System.Drawing.Point(67, 422);
             this.btnBajaHotel.Name = "btnBajaHotel";
-            this.btnBajaHotel.Size = new System.Drawing.Size(174, 23);
+            this.btnBajaHotel.Size = new System.Drawing.Size(218, 44);
             this.btnBajaHotel.TabIndex = 1;
             this.btnBajaHotel.Text = "Baja";
             this.btnBajaHotel.UseVisualStyleBackColor = true;
             // 
             // btnModifHotel
             // 
-            this.btnModifHotel.Location = new System.Drawing.Point(67, 177);
+            this.btnModifHotel.Location = new System.Drawing.Point(67, 472);
             this.btnModifHotel.Name = "btnModifHotel";
-            this.btnModifHotel.Size = new System.Drawing.Size(174, 23);
+            this.btnModifHotel.Size = new System.Drawing.Size(218, 44);
             this.btnModifHotel.TabIndex = 2;
-            this.btnModifHotel.Text = "Modificacion";
+            this.btnModifHotel.Text = "Modificar";
             this.btnModifHotel.UseVisualStyleBackColor = true;
             // 
             // btnVolverHotel
             // 
-            this.btnVolverHotel.Location = new System.Drawing.Point(19, 318);
+            this.btnVolverHotel.Location = new System.Drawing.Point(18, 538);
             this.btnVolverHotel.Name = "btnVolverHotel";
             this.btnVolverHotel.Size = new System.Drawing.Size(75, 23);
             this.btnVolverHotel.TabIndex = 3;
             this.btnVolverHotel.Text = "Volver";
             this.btnVolverHotel.UseVisualStyleBackColor = true;
-            // 
-            // BtnConsulHotel
-            // 
-            this.BtnConsulHotel.Location = new System.Drawing.Point(67, 237);
-            this.BtnConsulHotel.Name = "BtnConsulHotel";
-            this.BtnConsulHotel.Size = new System.Drawing.Size(174, 23);
-            this.BtnConsulHotel.TabIndex = 4;
-            this.BtnConsulHotel.Text = "Consulta";
-            this.BtnConsulHotel.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -91,13 +82,21 @@
             this.label7.TabIndex = 31;
             this.label7.Text = "Hoteles";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(26, 64);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(302, 303);
+            this.listBox1.TabIndex = 32;
+            // 
             // FrmHoteles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 359);
+            this.ClientSize = new System.Drawing.Size(380, 585);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.BtnConsulHotel);
             this.Controls.Add(this.btnVolverHotel);
             this.Controls.Add(this.btnModifHotel);
             this.Controls.Add(this.btnBajaHotel);
@@ -115,7 +114,7 @@
         private System.Windows.Forms.Button btnBajaHotel;
         private System.Windows.Forms.Button btnModifHotel;
         private System.Windows.Forms.Button btnVolverHotel;
-        private System.Windows.Forms.Button BtnConsulHotel;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

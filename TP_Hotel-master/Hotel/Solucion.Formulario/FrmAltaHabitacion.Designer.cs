@@ -42,11 +42,10 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.btnagregar = new System.Windows.Forms.Button();
-            this.btnaceptar = new System.Windows.Forms.Button();
-            this.btncancelar = new System.Windows.Forms.Button();
-            this.btnlimpiar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.btnlimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label7
@@ -161,39 +160,12 @@
             // 
             // btnagregar
             // 
-            this.btnagregar.Location = new System.Drawing.Point(72, 373);
+            this.btnagregar.Location = new System.Drawing.Point(28, 370);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(192, 23);
             this.btnagregar.TabIndex = 31;
             this.btnagregar.Text = "Agregar";
             this.btnagregar.UseVisualStyleBackColor = true;
-            // 
-            // btnaceptar
-            // 
-            this.btnaceptar.Location = new System.Drawing.Point(25, 427);
-            this.btnaceptar.Name = "btnaceptar";
-            this.btnaceptar.Size = new System.Drawing.Size(82, 24);
-            this.btnaceptar.TabIndex = 32;
-            this.btnaceptar.Text = "Aceptar";
-            this.btnaceptar.UseVisualStyleBackColor = true;
-            // 
-            // btncancelar
-            // 
-            this.btncancelar.Location = new System.Drawing.Point(235, 427);
-            this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(82, 24);
-            this.btncancelar.TabIndex = 33;
-            this.btncancelar.Text = "Cancelar";
-            this.btncancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnlimpiar
-            // 
-            this.btnlimpiar.Location = new System.Drawing.Point(131, 427);
-            this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(82, 24);
-            this.btnlimpiar.TabIndex = 34;
-            this.btnlimpiar.Text = "Limpiar";
-            this.btnlimpiar.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -211,16 +183,33 @@
             this.textBox2.Size = new System.Drawing.Size(122, 20);
             this.textBox2.TabIndex = 36;
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Location = new System.Drawing.Point(28, 425);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.TabIndex = 38;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            // 
+            // btnlimpiar
+            // 
+            this.btnlimpiar.Location = new System.Drawing.Point(143, 425);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnlimpiar.TabIndex = 37;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.UseVisualStyleBackColor = true;
+            // 
             // FrmAltaHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 494);
+            this.ClientSize = new System.Drawing.Size(267, 475);
+            this.Controls.Add(this.btnVolver);
+            this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btnlimpiar);
-            this.Controls.Add(this.btncancelar);
-            this.Controls.Add(this.btnaceptar);
             this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
@@ -258,10 +247,9 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Button btnagregar;
-        private System.Windows.Forms.Button btnaceptar;
-        private System.Windows.Forms.Button btncancelar;
-        private System.Windows.Forms.Button btnlimpiar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Button btnlimpiar;
     }
 }

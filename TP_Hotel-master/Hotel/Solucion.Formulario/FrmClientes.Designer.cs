@@ -29,33 +29,24 @@
         private void InitializeComponent()
         {
             this.BtnAltaCliente = new System.Windows.Forms.Button();
-            this.BtnConsutaCliente = new System.Windows.Forms.Button();
             this.BtnVolverCliente = new System.Windows.Forms.Button();
             this.btnModifCliente = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // BtnAltaCliente
             // 
-            this.BtnAltaCliente.Location = new System.Drawing.Point(65, 97);
+            this.BtnAltaCliente.Location = new System.Drawing.Point(65, 380);
             this.BtnAltaCliente.Name = "BtnAltaCliente";
             this.BtnAltaCliente.Size = new System.Drawing.Size(262, 50);
             this.BtnAltaCliente.TabIndex = 0;
             this.BtnAltaCliente.Text = "Alta";
             this.BtnAltaCliente.UseVisualStyleBackColor = true;
             // 
-            // BtnConsutaCliente
-            // 
-            this.BtnConsutaCliente.Location = new System.Drawing.Point(65, 254);
-            this.BtnConsutaCliente.Name = "BtnConsutaCliente";
-            this.BtnConsutaCliente.Size = new System.Drawing.Size(262, 50);
-            this.BtnConsutaCliente.TabIndex = 1;
-            this.BtnConsutaCliente.Text = "Consulta";
-            this.BtnConsutaCliente.UseVisualStyleBackColor = true;
-            // 
             // BtnVolverCliente
             // 
-            this.BtnVolverCliente.Location = new System.Drawing.Point(24, 375);
+            this.BtnVolverCliente.Location = new System.Drawing.Point(19, 547);
             this.BtnVolverCliente.Name = "BtnVolverCliente";
             this.BtnVolverCliente.Size = new System.Drawing.Size(75, 23);
             this.BtnVolverCliente.TabIndex = 3;
@@ -64,7 +55,7 @@
             // 
             // btnModifCliente
             // 
-            this.btnModifCliente.Location = new System.Drawing.Point(65, 173);
+            this.btnModifCliente.Location = new System.Drawing.Point(65, 456);
             this.btnModifCliente.Name = "btnModifCliente";
             this.btnModifCliente.Size = new System.Drawing.Size(262, 52);
             this.btnModifCliente.TabIndex = 4;
@@ -81,15 +72,23 @@
             this.label7.TabIndex = 30;
             this.label7.Text = "Clientes";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(38, 74);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(327, 277);
+            this.listBox1.TabIndex = 31;
+            // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 431);
+            this.ClientSize = new System.Drawing.Size(453, 599);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnModifCliente);
             this.Controls.Add(this.BtnVolverCliente);
-            this.Controls.Add(this.BtnConsutaCliente);
             this.Controls.Add(this.BtnAltaCliente);
             this.Name = "FrmClientes";
             this.Text = "Form2";
@@ -101,9 +100,9 @@
         #endregion
 
         private System.Windows.Forms.Button BtnAltaCliente;
-        private System.Windows.Forms.Button BtnConsutaCliente;
         private System.Windows.Forms.Button BtnVolverCliente;
         private System.Windows.Forms.Button btnModifCliente;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

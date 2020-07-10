@@ -33,11 +33,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnbaja = new System.Windows.Forms.Button();
-            this.btnAceptar = new System.Windows.Forms.Button();
-            this.btncancelar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -55,9 +54,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(21, 20);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(136, 20);
+            this.label7.Size = new System.Drawing.Size(164, 20);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Baja Habitacion";
+            this.label7.Text = "Eliminar Habitacion";
             // 
             // label2
             // 
@@ -79,30 +78,12 @@
             // 
             // btnbaja
             // 
-            this.btnbaja.Location = new System.Drawing.Point(67, 205);
+            this.btnbaja.Location = new System.Drawing.Point(154, 223);
             this.btnbaja.Name = "btnbaja";
-            this.btnbaja.Size = new System.Drawing.Size(215, 23);
+            this.btnbaja.Size = new System.Drawing.Size(108, 31);
             this.btnbaja.TabIndex = 22;
-            this.btnbaja.Text = "Baja Habitacion";
+            this.btnbaja.Text = "Eliminar";
             this.btnbaja.UseVisualStyleBackColor = true;
-            // 
-            // btnAceptar
-            // 
-            this.btnAceptar.Location = new System.Drawing.Point(67, 264);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 23;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            // 
-            // btncancelar
-            // 
-            this.btncancelar.Location = new System.Drawing.Point(207, 264);
-            this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(75, 23);
-            this.btncancelar.TabIndex = 24;
-            this.btncancelar.Text = "Cancelar";
-            this.btncancelar.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -128,16 +109,24 @@
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 27;
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Location = new System.Drawing.Point(25, 223);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(78, 31);
+            this.btnVolver.TabIndex = 29;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            // 
             // FrmBajaHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 311);
+            this.ClientSize = new System.Drawing.Size(295, 283);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.btncancelar);
-            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnbaja);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -158,10 +147,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnbaja;
-        private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Button btnVolver;
     }
 }
