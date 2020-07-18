@@ -4,6 +4,35 @@
     "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Solucion.Negocio\\Solucion.Negocio.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Datos\\Datos.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Datos\\Datos.csproj",
+        "projectName": "Datos",
+        "projectPath": "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Datos\\Datos.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Entidades\\Entidades.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Entidades\\Entidades.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Entidades\\Entidades.csproj",
+        "projectName": "Entidades",
+        "projectPath": "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Entidades\\Entidades.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Solucion.Negocio\\Solucion.Negocio.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -29,7 +58,14 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Datos\\Datos.csproj"
+              },
+              "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Graciela\\Documents\\GitHub\\TP_Hotel\\Entidades\\Entidades.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

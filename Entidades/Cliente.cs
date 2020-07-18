@@ -19,18 +19,7 @@ namespace Entidades
         private DateTime _fechaAlta;
         private bool _activo;
 
-        public Cliente(string nombre, string apellido, string direccion, string email, string telefono, int codigo, DateTime fechaAlta, bool activo)
-        {
-            this._nombre = nombre;
-            this._apellido = apellido;
-            this._direccion = direccion;
-            this._email = email;
-            this._telefono = telefono;
-            this._codigo = codigo;
-            this._fechaAlta = fechaAlta;
-            this._activo = activo;
 
-        }
 
         [DataMember]
         public string Nombre { get => _nombre; set => _nombre = value; }
