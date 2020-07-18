@@ -1,2 +1,9 @@
 C:\Users\Remdos\Desktop\TP_Hotel-master\TP_Hotel-master\Hotel\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
 C:\Users\Remdos\Desktop\TP_Hotel-master\TP_Hotel-master\Hotel\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Entidades\bin\Debug\Entidades.dll.config
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Entidades\bin\Debug\Entidades.dll
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Entidades\obj\Debug\Entidades.dll
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Entidades\obj\Debug\Entidades.pdb

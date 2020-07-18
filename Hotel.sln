@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solucion.Consola", "Hotel\Solucion.Consola.csproj", "{EDD2CDD7-B62E-410C-9365-A3DF9A6C5E04}"
+	ProjectSection(ProjectDependencies) = postProject
+		{57129731-74C0-4D85-B38B-BCE597498730} = {57129731-74C0-4D85-B38B-BCE597498730}
+		{96615434-2286-40DF-9620-74D42ED7C742} = {96615434-2286-40DF-9620-74D42ED7C742}
+		{BFB422DE-7297-4D97-8790-A85A7E41F4DB} = {BFB422DE-7297-4D97-8790-A85A7E41F4DB}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solucion.Formulario", "Solucion.Formulario\Solucion.Formulario.csproj", "{C1467899-1883-4DE5-B621-3B2637BCAD5B}"
 EndProject
@@ -11,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{BFB422DE-7297-4D97-8790-A85A7E41F4DB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solucion.Negocio", "Solucion.Negocio\Solucion.Negocio.csproj", "{1984ED49-5A65-4D1A-A779-03AA2B9D209B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solucion.Negocio", "Solucion.Negocio\Solucion.Negocio.csproj", "{57129731-74C0-4D85-B38B-BCE597498730}"
 	ProjectSection(ProjectDependencies) = postProject
 		{96615434-2286-40DF-9620-74D42ED7C742} = {96615434-2286-40DF-9620-74D42ED7C742}
 		{BFB422DE-7297-4D97-8790-A85A7E41F4DB} = {BFB422DE-7297-4D97-8790-A85A7E41F4DB}
@@ -39,10 +44,10 @@ Global
 		{BFB422DE-7297-4D97-8790-A85A7E41F4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFB422DE-7297-4D97-8790-A85A7E41F4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB422DE-7297-4D97-8790-A85A7E41F4DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1984ED49-5A65-4D1A-A779-03AA2B9D209B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1984ED49-5A65-4D1A-A779-03AA2B9D209B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1984ED49-5A65-4D1A-A779-03AA2B9D209B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1984ED49-5A65-4D1A-A779-03AA2B9D209B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57129731-74C0-4D85-B38B-BCE597498730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57129731-74C0-4D85-B38B-BCE597498730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57129731-74C0-4D85-B38B-BCE597498730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57129731-74C0-4D85-B38B-BCE597498730}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

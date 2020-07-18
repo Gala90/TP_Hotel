@@ -1,0 +1,13 @@
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\bin\Debug\Datos.dll.config
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\bin\Debug\Datos.dll
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\bin\Debug\Datos.pdb
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\bin\Debug\Entidades.dll
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\bin\Debug\Entidades.pdb
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\bin\Debug\Entidades.dll.config
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\obj\Debug\Datos.dll
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\obj\Debug\Datos.pdb

@@ -1,0 +1,16 @@
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\bin\Debug\Solucion.Negocio.dll.config
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\bin\Debug\Solucion.Negocio.dll
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\bin\Debug\Solucion.Negocio.pdb
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\bin\Debug\Datos.dll
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\bin\Debug\Entidades.dll
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\bin\Debug\Datos.pdb
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\bin\Debug\Datos.dll.config
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\bin\Debug\Entidades.pdb
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\bin\Debug\Entidades.dll.config
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\obj\Debug\Solucion.Negocio.csprojAssemblyReference.cache
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\obj\Debug\Solucion.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\obj\Debug\Solucion.Negocio.csproj.CopyComplete
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\obj\Debug\Solucion.Negocio.dll
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Negocio\obj\Debug\Solucion.Negocio.pdb
