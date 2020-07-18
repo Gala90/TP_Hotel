@@ -28,7 +28,6 @@ namespace Datos
         private NameValueCollection ReverseMap(Reserva p)
         {
             NameValueCollection n = new NameValueCollection();
-            n.Add("nroreserva", p.nroreserva.ToString());
             n.Add("codigocliente", p.codigocliente.ToString());
             n.Add("codigohabitacion", p.cantidadhuespedes.ToString());
             n.Add("fecha_ingreso", p.fecha_ingreso.ToString());

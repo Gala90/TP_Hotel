@@ -29,7 +29,6 @@ namespace Datos
         private NameValueCollection ReverseMap(Habitacion p)
         {
             NameValueCollection n = new NameValueCollection();
-            n.Add("codigo", p.codigo.ToString());
             n.Add("codigohotel", p.codigohotel.ToString());
             n.Add("categoria", p.categoria.ToString());
             n.Add("cantidadplazas", p.cantidadplazas.ToString());
