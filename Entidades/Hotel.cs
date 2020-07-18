@@ -1,0 +1,69 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entidades
+{
+    [DataContract]
+    public class Hotel
+    {
+        private int _codigo;
+        private string _nombre;
+        private string _direccion;
+        private int _estrellas;
+        private bool _amenities;
+
+        public Hotel (int codigo, string nombre, string direccion, int estrellas, bool amenities)
+        {
+            this._codigo = codigo;
+            this._nombre = nombre;
+            this._direccion = direccion;
+            this._estrellas = estrellas;
+            this._amenities = amenities;
+
+        }
+
+        [DataMember]
+        public int codigo
+        {
+            get { return this._codigo; }
+
+            set { this._codigo = value; }
+        }
+
+        [DataMember]
+        public string nombre
+        {
+            get { return this._nombre; }
+
+            set { this._nombre = value; }
+        }
+
+        [DataMember]
+        public string direccion
+        {
+            get { return this._direccion; }
+
+            set { this._direccion = value; }
+        }
+
+        [DataMember]
+        public int estrellas
+        {
+            get { return this._estrellas; }
+
+            set { this._estrellas = value; }
+        }
+
+        [DataMember]
+        public bool amenities
+        {
+            get { return this._amenities; }
+
+            set { this._amenities = value; }
+        }
+    }
+}
