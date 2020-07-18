@@ -18,9 +18,8 @@ namespace Entidades
         private double _precio;
 
 
-        public Habitacion(int codigo, int codigohotel, string categoria, int cantidadplazas, bool cancelacion, double precio)
+        public Habitacion(int codigohotel, string categoria, int cantidadplazas, bool cancelacion, double precio)
         {
-            this._codigo = codigo;
             this._codigohotel = codigohotel;
             this._categoria = categoria;
             this._cantidadplazas = cantidadplazas;

@@ -16,9 +16,8 @@ namespace Entidades
         private int _estrellas;
         private bool _amenities;
 
-        public Hotel (int codigo, string nombre, string direccion, int estrellas, bool amenities)
+        public Hotel (string nombre, string direccion, int estrellas, bool amenities)
         {
-            this._codigo = codigo;
             this._nombre = nombre;
             this._direccion = direccion;
             this._estrellas = estrellas;

@@ -17,9 +17,8 @@ namespace Entidades
         private DateTime _fecha_ingreso;
         private DateTime _fecha_egreso;
 
-        public Reserva (int nroreserva, int codigocliente, int codigohabitacion, int cantidadhuespedes, DateTime fecha_ingreso, DateTime fecha_egreso)
+        public Reserva (int codigocliente, int codigohabitacion, int cantidadhuespedes, DateTime fecha_ingreso, DateTime fecha_egreso)
         {
-            this._nroreserva = nroreserva;
             this._codigocliente = codigocliente;
             this._codigohabitacion = codigohabitacion;
             this._cantidadhuespedes = cantidadhuespedes;
