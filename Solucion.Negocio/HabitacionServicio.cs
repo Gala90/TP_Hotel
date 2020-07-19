@@ -16,9 +16,9 @@ namespace Solucion.Negocio
             mapper = new HabitacionMapper();
         }
 
-        public List<Habitacion> TraerHabitaciones()
+        public List<Habitacion> TraerHabitaciones(int cod)
         {
-            List<Habitacion> result = mapper.TraerTodos();
+            List<Habitacion> result = mapper.TraerTodos(cod);
             return result;
         }
 

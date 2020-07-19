@@ -10,7 +10,7 @@ namespace Entidades
     [DataContract]
     public class Reserva
     {
- //       private int _nroreserva;
+        private int _nroreserva;
         private int _codigocliente;
         private int _codigohabitacion;
         private int _cantidadhuespedes;
@@ -27,13 +27,13 @@ namespace Entidades
 
         }
 
-   /*     [DataMember]
+        [DataMember]
        public int nroreserva
         {
             get { return _nroreserva; }
 
             set { this._nroreserva = value; }
-        }*/
+        }
 
         [DataMember]
         public int codigocliente

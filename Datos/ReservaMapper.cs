@@ -14,7 +14,7 @@ namespace Datos
 
         public List<Reserva> TraerTodos()
         {
-            string json = WebHelper.Get("api/v1/hotel/Reservas/");
+            string json = WebHelper.Get("/api/v1/hotel/Reservas/");
             List<Reserva> resultadoMapeo = MapList(json);
             return resultadoMapeo;
         }
@@ -39,7 +39,7 @@ namespace Datos
         public ResultadoTransaccion Insert(Reserva reservanueva)
         {
             NameValueCollection obj = ReverseMap(reservanueva);
-            string resultadoPost = WebHelper.Post("api/v1/hotel/Reservas/", obj);
+            string resultadoPost = WebHelper.Post("api/v1/hotel/Ventas/", obj);
             ResultadoTransaccion resultado = MapResultado(resultadoPost);
             return resultado;
         }

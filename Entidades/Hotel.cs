@@ -10,7 +10,7 @@ namespace Entidades
     [DataContract]
     public class Hotel
     {
-  //      private int _codigo;
+        private int _id;
         private string _nombre;
         private string _direccion;
         private int _estrellas;
@@ -25,13 +25,13 @@ namespace Entidades
 
         }
 
- /*       [DataMember]
-        public int codigo
+        [DataMember]
+        public int id
         {
-            get { return this._codigo; }
+            get { return this._id; }
 
-            set { this._codigo = value; }
-        }*/
+            set { this._id = value; }
+        }
 
         [DataMember]
         public string nombre
@@ -69,11 +69,11 @@ namespace Entidades
         {
             if (this._amenities == true)
             {
-                return "Hotel " + this._nombre + "  Direccion: " + this.direccion + " " + this._estrellas + " estrellas Con amenities";
+                return "Id: " + id +  " Hotel " + this._nombre + "  Direccion: " + this.direccion + " " + this._estrellas + " estrellas Con amenities";
             }
             else
             {
-                return "Hotel " + this._nombre + " Direccion: " + this.direccion + " " + this._estrellas + " estrellas Sin amenities";
+                return "Id: " + id + " Hotel " + this._nombre + " Direccion: " + this.direccion + " " + this._estrellas + " estrellas Sin amenities";
             }
         }
     }

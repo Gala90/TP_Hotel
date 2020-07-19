@@ -12,9 +12,9 @@ namespace Datos
 {
     public class HabitacionMapper
     {
-        public List<Habitacion> TraerTodos()
+        public List<Habitacion> TraerTodos(int cod)
         {
-            string json = WebHelper.Get("/api/v1/Hotel/Habitaciones/" + ConfigurationManager.AppSettings["idHotel"]);
+            string json = WebHelper.Get("/api/v1/Hotel/Habitaciones/" + cod);
             List<Habitacion> resultadoMapeo = MapList(json);
             return resultadoMapeo;
         }

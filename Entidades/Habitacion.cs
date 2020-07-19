@@ -10,7 +10,7 @@ namespace Entidades
     [DataContract]
     public class Habitacion
     {
-        //private int _codigo;
+        private int _codigo;
         private int _codigohotel;
         private string _categoria;
         private int _cantidadplazas;
@@ -27,13 +27,13 @@ namespace Entidades
             this._precio = precio;
         }
 
-  /*      [DataMember]
+       [DataMember]
         public int codigo
         {
             get {return _codigo; }
 
             set { this._codigo = value; }
-        }*/
+        }
 
         [DataMember]
         public int codigohotel
