@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Entidades;
+using Solucion.Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,28 @@ namespace Solucion.Formulario
         public FrmHoteles()
         {
             InitializeComponent();
+        }
+
+        private void btnVolverHotel_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Close();
+        }
+
+        private void FrmHoteles_Load(object sender, EventArgs e)
+        {
+            List<string> listaHoteles = new List<string>();
+
+            HotelServicio servicio = new HotelServicio();
+
+            List<Hotel> lst = servicio.TraerHoteles();
+
+            foreach (Hotel Hotel in lst)
+            {
+                listaHoteles.Add(Hotel.ToString());
+            }
+
+            listBox1.DataSource = listaHoteles;
         }
     }
 }

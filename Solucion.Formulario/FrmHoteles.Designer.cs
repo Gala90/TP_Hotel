@@ -71,6 +71,7 @@
             this.btnVolverHotel.TabIndex = 3;
             this.btnVolverHotel.Text = "Volver";
             this.btnVolverHotel.UseVisualStyleBackColor = true;
+            this.btnVolverHotel.Click += new System.EventHandler(this.btnVolverHotel_Click);
             // 
             // label7
             // 
@@ -103,6 +104,7 @@
             this.Controls.Add(this.btnAltaHotel);
             this.Name = "FrmHoteles";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.FrmHoteles_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

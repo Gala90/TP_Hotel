@@ -16,5 +16,34 @@ namespace Solucion.Formulario
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmHoteles f = new FrmHoteles();
+            f.Owner = this;
+            f.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmClientes f = new FrmClientes();
+            f.Owner = this;
+            f.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmReservas f = new FrmReservas();
+            f.Owner = this;
+            f.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

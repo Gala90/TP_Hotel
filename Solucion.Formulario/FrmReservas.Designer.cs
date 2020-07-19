@@ -53,6 +53,7 @@
             this.BtnVolverReserva.TabIndex = 3;
             this.BtnVolverReserva.Text = "Volver";
             this.BtnVolverReserva.UseVisualStyleBackColor = true;
+            this.BtnVolverReserva.Click += new System.EventHandler(this.BtnVolverReserva_Click);
             // 
             // btnBajaReserva
             // 
@@ -103,6 +104,7 @@
             this.Controls.Add(this.BtnAltaReserva);
             this.Name = "FrmReservas";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.FrmReservas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

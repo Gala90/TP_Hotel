@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Solucion.Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -70,6 +71,13 @@ namespace Solucion.Formulario
         private void Textemail_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnaceptar_Click(object sender, EventArgs e)
+        {
+            ClienteServicio servicio = new ClienteServicio();
+            servicio.Alta_Cliente(textNombre.ToString(), textApellido.ToString(), textDireccion.ToString(), textemail.ToString(), textTelefono.ToString(), DateTime.Today, true);
+            
         }
     }
 }

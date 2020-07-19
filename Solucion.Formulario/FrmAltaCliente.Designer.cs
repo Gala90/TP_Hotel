@@ -142,6 +142,7 @@
             this.btnaceptar.TabIndex = 10;
             this.btnaceptar.Text = "Aceptar";
             this.btnaceptar.UseVisualStyleBackColor = true;
+            this.btnaceptar.Click += new System.EventHandler(this.btnaceptar_Click);
             // 
             // btnlimpiar
             // 

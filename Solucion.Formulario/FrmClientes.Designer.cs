@@ -43,6 +43,7 @@
             this.BtnAltaCliente.TabIndex = 0;
             this.BtnAltaCliente.Text = "Alta";
             this.BtnAltaCliente.UseVisualStyleBackColor = true;
+            this.BtnAltaCliente.Click += new System.EventHandler(this.BtnAltaCliente_Click);
             // 
             // BtnVolverCliente
             // 
@@ -52,6 +53,7 @@
             this.BtnVolverCliente.TabIndex = 3;
             this.BtnVolverCliente.Text = "Volver";
             this.BtnVolverCliente.UseVisualStyleBackColor = true;
+            this.BtnVolverCliente.Click += new System.EventHandler(this.BtnVolverCliente_Click);
             // 
             // btnModifCliente
             // 
@@ -92,6 +94,7 @@
             this.Controls.Add(this.BtnAltaCliente);
             this.Name = "FrmClientes";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.FrmClientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
