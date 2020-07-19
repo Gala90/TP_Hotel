@@ -64,5 +64,17 @@ namespace Entidades
 
             set { this._amenities = value; }
         }
+
+        public override string ToString()
+        {
+            if (this._amenities == true)
+            {
+                return "Hotel " + this._nombre + "  Direccion: " + this.direccion + " " + this._estrellas + " estrellas Con amenities";
+            }
+            else
+            {
+                return "Hotel " + this._nombre + " Direccion: " + this.direccion + " " + this._estrellas + " estrellas Sin amenities";
+            }
+        }
     }
 }

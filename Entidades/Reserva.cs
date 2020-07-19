@@ -72,6 +72,13 @@ namespace Entidades
             set { this._fecha_egreso = value; }
         }
 
+        public override string ToString()
+        {
+     
+         return "Cliente: " + this._codigocliente + "  Habitacion: " + this._codigohabitacion + " Huespedes: " + this._cantidadhuespedes + " Check In" + this._fecha_ingreso + " Check Out " + this._fecha_egreso;
+            
+ 
+        }
 
     }
 }
