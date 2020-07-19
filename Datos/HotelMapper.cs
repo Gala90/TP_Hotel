@@ -13,7 +13,7 @@ namespace Datos
     {
         public List<Hotel> TraerTodos()
         {
-            string json = WebHelper.Get("api/v1/hotel/hoteles/");
+            string json = WebHelper.Get("/api/v1/Hotel/Hoteles/");
             List<Hotel> resultadoMapeo = MapList(json);
             return resultadoMapeo;
         }
