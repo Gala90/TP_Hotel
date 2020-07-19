@@ -14,7 +14,7 @@ namespace Datos
     {
         public List<Habitacion> TraerTodos()
         {
-            string json = WebHelper.Get("api/v1/hotel/habitaciones/" + ConfigurationManager.AppSettings["idHotel"]);
+            string json = WebHelper.Get("/api/v1/Hotel/Habitaciones/" + ConfigurationManager.AppSettings["idHotel"]);
             List<Habitacion> resultadoMapeo = MapList(json);
             return resultadoMapeo;
         }

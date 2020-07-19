@@ -7,3 +7,10 @@ C:\Users\Graciela\Documents\GitHub\TP_Hotel\Entidades\obj\Debug\Entidades.csproj
 C:\Users\Graciela\Documents\GitHub\TP_Hotel\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Graciela\Documents\GitHub\TP_Hotel\Entidades\obj\Debug\Entidades.dll
 C:\Users\Graciela\Documents\GitHub\TP_Hotel\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Remdos\Desktop\TP_Hotel-master\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Remdos\Desktop\TP_Hotel-master\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Remdos\Desktop\TP_Hotel-master\Entidades\obj\Debug\Entidades.dll
+C:\Users\Remdos\Desktop\TP_Hotel-master\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Remdos\Desktop\TP_Hotel-master\Entidades\bin\Debug\Entidades.dll.config
+C:\Users\Remdos\Desktop\TP_Hotel-master\Entidades\bin\Debug\Entidades.dll
+C:\Users\Remdos\Desktop\TP_Hotel-master\Entidades\bin\Debug\Entidades.pdb

@@ -10,7 +10,7 @@ namespace Entidades
     [DataContract]
     public class Hotel
     {
-        private int _codigo;
+  //      private int _codigo;
         private string _nombre;
         private string _direccion;
         private int _estrellas;
@@ -25,13 +25,13 @@ namespace Entidades
 
         }
 
-        [DataMember]
+ /*       [DataMember]
         public int codigo
         {
             get { return this._codigo; }
 
             set { this._codigo = value; }
-        }
+        }*/
 
         [DataMember]
         public string nombre
