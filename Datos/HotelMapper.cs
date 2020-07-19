@@ -39,7 +39,7 @@ namespace Datos
         public ResultadoTransaccion Insert(Hotel hotelnuevo)
         {
             NameValueCollection obj = ReverseMap(hotelnuevo);
-            string resultadoPost = WebHelper.Post("api/v1/hotel/hoteles/", obj);
+            string resultadoPost = WebHelper.Post("/api/v1/hotel/hoteles/", obj);
             ResultadoTransaccion resultado = MapResultado(resultadoPost);
             return resultado;
         }
