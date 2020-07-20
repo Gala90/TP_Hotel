@@ -17,6 +17,32 @@ namespace Solucion.Formulario
             InitializeComponent();
         }
 
- 
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Dispose();
+        }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            txtidhabitacion.Clear();
+            comboBox1.SelectedIndex = -1;
+            comboBox2.SelectedIndex = -1;
+            comboBox3.SelectedIndex = -1;
+            comboBox4.SelectedIndex = -1;
+            textBox1.Clear();
+            textBox2.Clear();
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

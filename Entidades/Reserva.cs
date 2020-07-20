@@ -10,17 +10,17 @@ namespace Entidades
     [DataContract]
     public class Reserva
     {
-        private int _nroreserva;
-        private int _codigocliente;
-        private int _codigohabitacion;
+        private int _id;
+        private int _idHabitacion;
+        private int _idCliente;
         private int _cantidadhuespedes;
         private DateTime _fecha_ingreso;
         private DateTime _fecha_egreso;
 
-        public Reserva (int codigocliente, int codigohabitacion, int cantidadhuespedes, DateTime fecha_ingreso, DateTime fecha_egreso)
+        public Reserva (int idHabitacion, int idCliente, int cantidadhuespedes, DateTime fecha_ingreso, DateTime fecha_egreso)
         {
-            this._codigocliente = codigocliente;
-            this._codigohabitacion = codigohabitacion;
+            this._idHabitacion = idHabitacion;
+            this._idCliente = idCliente;
             this._cantidadhuespedes = cantidadhuespedes;
             this._fecha_ingreso = fecha_ingreso;
             this._fecha_egreso = fecha_egreso;
@@ -28,27 +28,28 @@ namespace Entidades
         }
 
         [DataMember]
-       public int nroreserva
+       public int id
         {
-            get { return _nroreserva; }
+            get { return _id; }
 
-            set { this._nroreserva = value; }
+            set { this._id = value; }
+        }
+
+
+        [DataMember]
+        public int idHabitacion
+        {
+            get { return _idHabitacion; }
+
+            set { this._idHabitacion = value; }
         }
 
         [DataMember]
-        public int codigocliente
+        public int idCliente
         {
-            get { return _codigocliente; }
+            get { return _idCliente; }
 
-            set { this._codigocliente = value; }
-        }
-
-        [DataMember]
-        public int codigohabitacion
-        {
-            get { return _codigohabitacion; }
-
-            set { this._codigohabitacion = value; }
+            set { this._idCliente = value; }
         }
 
         public int cantidadhuespedes
@@ -74,10 +75,11 @@ namespace Entidades
 
         public override string ToString()
         {
-     
-         return "Cliente: " + this._codigocliente + "  Habitacion: " + this._codigohabitacion + " Huespedes: " + this._cantidadhuespedes + " Check In" + this._fecha_ingreso + " Check Out " + this._fecha_egreso;
-            
- 
+
+            return "Habitacion: " + this._idHabitacion + " Cliente: " + this._idCliente + " Huespedes: " + this._cantidadhuespedes + " Check In: " + this._fecha_ingreso.Day + "/" + this._fecha_ingreso.Month + "/" + this._fecha_ingreso.Year + " Check Out: " + this._fecha_egreso.Day + "/" + this._fecha_egreso.Month + "/" + this._fecha_egreso.Year;
+
+
+
         }
 
     }

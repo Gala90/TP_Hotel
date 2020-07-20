@@ -22,9 +22,9 @@ namespace Solucion.Negocio
             return result;
         }
 
-        public int Agregar_Reserva(int codigocliente, int codigohabitacion, int cantidadhuespedes, DateTime fecha_ingreso, DateTime fecha_egreso)
+        public int Agregar_Reserva(int idHabitacion, int idCliente, int cantidadhuespedes, DateTime fecha_ingreso, DateTime fecha_egreso)
         {
-            Reserva reserva = new Reserva(codigocliente, codigohabitacion, cantidadhuespedes, fecha_ingreso, fecha_egreso);
+            Reserva reserva = new Reserva(idHabitacion, idCliente, cantidadhuespedes, fecha_ingreso, fecha_egreso);
 
             ResultadoTransaccion resultante = mapper.Insert(reserva);
 

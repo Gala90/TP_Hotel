@@ -28,10 +28,11 @@ namespace Datos
         private NameValueCollection ReverseMap(Reserva p)
         {
             NameValueCollection n = new NameValueCollection();
-            n.Add("codigocliente", p.codigocliente.ToString());
-            n.Add("codigohabitacion", p.cantidadhuespedes.ToString());
-            n.Add("fecha_ingreso", p.fecha_ingreso.ToString());
-            n.Add("fecha_egreso", p.fecha_egreso.ToString());
+            n.Add("idHabitacion", p.idHabitacion.ToString());
+            n.Add("idCliente", p.idCliente.ToString());
+            n.Add("CantidadHuespedes", p.cantidadhuespedes.ToString());
+            n.Add("FechaIngreso", p.fecha_ingreso.ToString());
+            n.Add("FechaEgreso", p.fecha_egreso.ToString());
 
             return n;
         }
@@ -39,7 +40,7 @@ namespace Datos
         public ResultadoTransaccion Insert(Reserva reservanueva)
         {
             NameValueCollection obj = ReverseMap(reservanueva);
-            string resultadoPost = WebHelper.Post("api/v1/hotel/Ventas/", obj);
+            string resultadoPost = WebHelper.Post("/api/v1/hotel/Ventas/", obj);
             ResultadoTransaccion resultado = MapResultado(resultadoPost);
             return resultado;
         }

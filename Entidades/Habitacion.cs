@@ -10,37 +10,37 @@ namespace Entidades
     [DataContract]
     public class Habitacion
     {
-        private int _codigo;
-        private int _codigohotel;
+        private int _id;
+        private int _idhotel;
         private string _categoria;
         private int _cantidadplazas;
         private bool _cancelacion;
         private double _precio;
 
 
-        public Habitacion(int codigohotel, string categoria, int cantidadplazas, bool cancelacion, double precio)
+        public Habitacion(int idhotel, string categoria, int cantidadplazas, bool cancelacion, double precio)
         {
-            this._codigohotel = codigohotel;
+            this._idhotel = idhotel;
             this._categoria = categoria;
             this._cantidadplazas = cantidadplazas;
             this._cancelacion = cancelacion;
             this._precio = precio;
         }
 
-       [DataMember]
-        public int codigo
+        [DataMember]
+        public int id
         {
-            get {return _codigo; }
+            get { return _id; }
 
-            set { this._codigo = value; }
+            set { this._id = value; }
         }
 
         [DataMember]
-        public int codigohotel
+        public int idhotel
         {
-            get { return _codigohotel; }
+            get { return _idhotel; }
 
-            set { this._codigohotel = value; }
+            set { this._idhotel = value; }
         }
 
         [DataMember]
@@ -73,6 +73,19 @@ namespace Entidades
             get { return _precio; }
 
             set { this._precio = value; }
+        }
+
+
+        public override string ToString()
+        {
+            if (this._cancelacion == true)
+            {
+                return "Id: " + id + " Hotel: " + this.idhotel + "  Categoria: " + this.categoria + " Cantidad: " + this.cantidadplazas + " reembolsable Precio: " + this.precio;
+            }
+            else
+            {
+                return "Id: " + id + " Hotel: " + this.idhotel + "  Categoria: " + this.categoria + " Cantidad: " + this.cantidadplazas + " no reembolsable Precio: " + this.precio;
+            }
         }
     }
 }

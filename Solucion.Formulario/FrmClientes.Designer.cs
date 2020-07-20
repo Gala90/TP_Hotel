@@ -39,7 +39,7 @@
             // 
             this.BtnAltaCliente.Location = new System.Drawing.Point(65, 380);
             this.BtnAltaCliente.Name = "BtnAltaCliente";
-            this.BtnAltaCliente.Size = new System.Drawing.Size(262, 50);
+            this.BtnAltaCliente.Size = new System.Drawing.Size(450, 50);
             this.BtnAltaCliente.TabIndex = 0;
             this.BtnAltaCliente.Text = "Alta";
             this.BtnAltaCliente.UseVisualStyleBackColor = true;
@@ -47,9 +47,9 @@
             // 
             // BtnVolverCliente
             // 
-            this.BtnVolverCliente.Location = new System.Drawing.Point(19, 547);
+            this.BtnVolverCliente.Location = new System.Drawing.Point(24, 566);
             this.BtnVolverCliente.Name = "BtnVolverCliente";
-            this.BtnVolverCliente.Size = new System.Drawing.Size(75, 23);
+            this.BtnVolverCliente.Size = new System.Drawing.Size(105, 37);
             this.BtnVolverCliente.TabIndex = 3;
             this.BtnVolverCliente.Text = "Volver";
             this.BtnVolverCliente.UseVisualStyleBackColor = true;
@@ -59,7 +59,7 @@
             // 
             this.btnModifCliente.Location = new System.Drawing.Point(65, 456);
             this.btnModifCliente.Name = "btnModifCliente";
-            this.btnModifCliente.Size = new System.Drawing.Size(262, 52);
+            this.btnModifCliente.Size = new System.Drawing.Size(450, 52);
             this.btnModifCliente.TabIndex = 4;
             this.btnModifCliente.Text = "Modificar";
             this.btnModifCliente.UseVisualStyleBackColor = true;
@@ -79,14 +79,14 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(38, 74);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(327, 277);
+            this.listBox1.Size = new System.Drawing.Size(507, 277);
             this.listBox1.TabIndex = 31;
             // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(453, 599);
+            this.ClientSize = new System.Drawing.Size(602, 633);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnModifCliente);

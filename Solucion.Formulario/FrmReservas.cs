@@ -40,5 +40,13 @@ namespace Solucion.Formulario
 
             listBox1.DataSource = listareservas;
         }
+
+        private void BtnAltaReserva_Click(object sender, EventArgs e)
+        {
+            FrmAltaReserva f2 = new FrmAltaReserva();
+            f2.Owner = this;
+            f2.Show();
+            this.Hide();
+        }
     }
 }

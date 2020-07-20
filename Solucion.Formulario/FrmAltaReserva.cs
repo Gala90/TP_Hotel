@@ -41,5 +41,26 @@ namespace Solucion.Formulario
         {
 
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Dispose();
+        }
+
+        private void textApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            comboID.SelectedIndex = -1;
+            textCantidad.Clear();
+            comboBox1.SelectedIndex = -1;
+
+
+
+        }
     }
 }

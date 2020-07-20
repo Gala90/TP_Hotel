@@ -79,5 +79,21 @@ namespace Solucion.Formulario
             servicio.Alta_Cliente(textNombre.ToString(), textApellido.ToString(), textDireccion.ToString(), textemail.ToString(), textTelefono.ToString(), DateTime.Today, true);
             
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Dispose();
+        }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            textNombre.Clear();
+            textApellido.Clear();
+            textemail.Clear();
+            textTelefono.Clear();
+            textDireccion.Clear();
+
+        }
     }
 }

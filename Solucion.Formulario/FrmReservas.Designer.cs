@@ -40,16 +40,17 @@
             // 
             this.BtnAltaReserva.Location = new System.Drawing.Point(58, 396);
             this.BtnAltaReserva.Name = "BtnAltaReserva";
-            this.BtnAltaReserva.Size = new System.Drawing.Size(224, 46);
+            this.BtnAltaReserva.Size = new System.Drawing.Size(476, 46);
             this.BtnAltaReserva.TabIndex = 0;
             this.BtnAltaReserva.Text = "Crear";
             this.BtnAltaReserva.UseVisualStyleBackColor = true;
+            this.BtnAltaReserva.Click += new System.EventHandler(this.BtnAltaReserva_Click);
             // 
             // BtnVolverReserva
             // 
-            this.BtnVolverReserva.Location = new System.Drawing.Point(12, 589);
+            this.BtnVolverReserva.Location = new System.Drawing.Point(12, 598);
             this.BtnVolverReserva.Name = "BtnVolverReserva";
-            this.BtnVolverReserva.Size = new System.Drawing.Size(75, 23);
+            this.BtnVolverReserva.Size = new System.Drawing.Size(87, 26);
             this.BtnVolverReserva.TabIndex = 3;
             this.BtnVolverReserva.Text = "Volver";
             this.BtnVolverReserva.UseVisualStyleBackColor = true;
@@ -59,7 +60,7 @@
             // 
             this.btnBajaReserva.Location = new System.Drawing.Point(58, 463);
             this.btnBajaReserva.Name = "btnBajaReserva";
-            this.btnBajaReserva.Size = new System.Drawing.Size(224, 45);
+            this.btnBajaReserva.Size = new System.Drawing.Size(476, 45);
             this.btnBajaReserva.TabIndex = 4;
             this.btnBajaReserva.Text = "Cancelar";
             this.btnBajaReserva.UseVisualStyleBackColor = true;
@@ -68,7 +69,7 @@
             // 
             this.btnModifReserva.Location = new System.Drawing.Point(58, 527);
             this.btnModifReserva.Name = "btnModifReserva";
-            this.btnModifReserva.Size = new System.Drawing.Size(224, 45);
+            this.btnModifReserva.Size = new System.Drawing.Size(476, 45);
             this.btnModifReserva.TabIndex = 5;
             this.btnModifReserva.Text = "Modificar";
             this.btnModifReserva.UseVisualStyleBackColor = true;
@@ -88,14 +89,14 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(29, 71);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(306, 303);
+            this.listBox1.Size = new System.Drawing.Size(559, 316);
             this.listBox1.TabIndex = 33;
             // 
             // FrmReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 624);
+            this.ClientSize = new System.Drawing.Size(675, 636);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnModifReserva);

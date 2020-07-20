@@ -40,5 +40,13 @@ namespace Solucion.Formulario
 
             listBox1.DataSource = listaHoteles;
         }
+
+        private void btnAltaHotel_Click(object sender, EventArgs e)
+        {
+            FrmAltaHotel f2 = new FrmAltaHotel();
+            f2.Owner = this;
+            f2.Show();
+            this.Hide();
+        }
     }
 }

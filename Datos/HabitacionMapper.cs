@@ -12,9 +12,9 @@ namespace Datos
 {
     public class HabitacionMapper
     {
-        public List<Habitacion> TraerTodos(int cod)
+        public List<Habitacion> TraerTodos(int id)
         {
-            string json = WebHelper.Get("/api/v1/Hotel/Habitaciones/" + cod);
+            string json = WebHelper.Get("/api/v1/Hotel/Habitaciones/" + id);
             List<Habitacion> resultadoMapeo = MapList(json);
             return resultadoMapeo;
         }
@@ -29,7 +29,7 @@ namespace Datos
         private NameValueCollection ReverseMap(Habitacion p)
         {
             NameValueCollection n = new NameValueCollection();
-            n.Add("codigohotel", p.codigohotel.ToString());
+            n.Add("idHotel", p.idhotel.ToString());
             n.Add("categoria", p.categoria.ToString());
             n.Add("cantidadplazas", p.cantidadplazas.ToString());
             n.Add("cancelacion", p.cancelacion.ToString());

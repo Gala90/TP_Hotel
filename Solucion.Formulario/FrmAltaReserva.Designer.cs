@@ -36,7 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textApellido = new System.Windows.Forms.TextBox();
+            this.textCantidad = new System.Windows.Forms.TextBox();
             this.comboID = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             this.btnVolver.TabIndex = 25;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnlimpiar
             // 
@@ -61,6 +62,7 @@
             this.btnlimpiar.TabIndex = 24;
             this.btnlimpiar.Text = "Limpiar";
             this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
             // btnaceptar
             // 
@@ -118,12 +120,13 @@
             this.label1.Text = "Hotel";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // textApellido
+            // textCantidad
             // 
-            this.textApellido.Location = new System.Drawing.Point(176, 128);
-            this.textApellido.Name = "textApellido";
-            this.textApellido.Size = new System.Drawing.Size(105, 20);
-            this.textApellido.TabIndex = 14;
+            this.textCantidad.Location = new System.Drawing.Point(176, 128);
+            this.textCantidad.Name = "textCantidad";
+            this.textCantidad.Size = new System.Drawing.Size(105, 20);
+            this.textCantidad.TabIndex = 14;
+            this.textCantidad.TextChanged += new System.EventHandler(this.textApellido_TextChanged);
             // 
             // comboID
             // 
@@ -188,7 +191,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textApellido);
+            this.Controls.Add(this.textCantidad);
             this.Name = "FrmAltaReserva";
             this.Text = "FrmAltaReserva";
             this.Load += new System.EventHandler(this.FrmAltaReserva_Load);
@@ -207,7 +210,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textApellido;
+        private System.Windows.Forms.TextBox textCantidad;
         private System.Windows.Forms.ComboBox comboID;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label7;

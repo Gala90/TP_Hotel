@@ -16,15 +16,15 @@ namespace Solucion.Negocio
             mapper = new HabitacionMapper();
         }
 
-        public List<Habitacion> TraerHabitaciones(int cod)
+        public List<Habitacion> TraerHabitaciones(int id)
         {
-            List<Habitacion> result = mapper.TraerTodos(cod);
+            List<Habitacion> result = mapper.TraerTodos(id);
             return result;
         }
 
-        public int Alta_Habitacion(int codigohotel, string categoria, int cantidadplazas, bool cancelacion, double precio)
+        public int Alta_Habitacion(int idhotel, string categoria, int cantidadplazas, bool cancelacion, double precio)
         {
-            Habitacion habitacion = new Habitacion(codigohotel, categoria, cantidadplazas, cancelacion, precio);
+            Habitacion habitacion = new Habitacion(idhotel, categoria, cantidadplazas, cancelacion, precio);
 
             ResultadoTransaccion resultante = mapper.Insert(habitacion);
 

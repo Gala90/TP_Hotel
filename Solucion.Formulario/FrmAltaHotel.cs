@@ -59,7 +59,8 @@ namespace Solucion.Formulario
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            this.Owner.Show();
+            this.Dispose();
         }
 
         private void Label6_Click(object sender, EventArgs e)
@@ -99,7 +100,11 @@ namespace Solucion.Formulario
 
         private void Button2_Click(object sender, EventArgs e)
         {
-
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
         }
 
         private void Button3_Click(object sender, EventArgs e)

@@ -39,7 +39,7 @@ namespace Solucion.Formulario
         private void BtnVolverCliente_Click(object sender, EventArgs e)
         {
             this.Owner.Show();
-            this.Close();
+            this.Dispose();
         }
 
         private void BtnAltaCliente_Click(object sender, EventArgs e)
