@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Solucion.Negocio;
 
 namespace Solucion.Formulario
 {
@@ -103,13 +104,37 @@ namespace Solucion.Formulario
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
-            textBox4.Clear();
-            textBox5.Clear();
+
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
+            try
+            {
+                HotelServicio servicio = new HotelServicio();
 
+                if (checkBox1.Checked)
+                {
+                    servicio.Alta_Hotel(textBox1.Text.ToString(), textBox2.Text.ToString(), Convert.ToInt32(textBox3.Text), true);
+                    MessageBox.Show("El Hotel " + textBox1.Text.ToString() + " ha sido agregado.");
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    textBox3.Clear();
+                }
+                else
+                {
+                    servicio.Alta_Hotel(textBox1.Text.ToString(), textBox2.Text.ToString(), Convert.ToInt32(textBox3.Text), false);
+                    MessageBox.Show("El Hotel " + textBox1.Text.ToString() + " ha sido agregado.");
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    textBox3.Clear();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+
     }
 }

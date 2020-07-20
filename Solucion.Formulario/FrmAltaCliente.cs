@@ -75,9 +75,22 @@ namespace Solucion.Formulario
 
         private void btnaceptar_Click(object sender, EventArgs e)
         {
+            try 
+            { 
             ClienteServicio servicio = new ClienteServicio();
-            servicio.Alta_Cliente(textNombre.ToString(), textApellido.ToString(), textDireccion.ToString(), textemail.ToString(), textTelefono.ToString(), DateTime.Today, true);
-            
+            servicio.Alta_Cliente(textNombre.Text.ToString(), textApellido.Text.ToString(), textDireccion.Text.ToString(), textemail.Text.ToString(), textTelefono.Text.ToString(), DateTime.Today, true);
+                MessageBox.Show("El cliente ha sido agregado con exito");
+                textNombre.Clear();
+                textApellido.Clear();
+                textemail.Clear();
+                textTelefono.Clear();
+                textDireccion.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
         }
 
         private void btnVolver_Click(object sender, EventArgs e)

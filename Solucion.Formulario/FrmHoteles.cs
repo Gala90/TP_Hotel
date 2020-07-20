@@ -27,6 +27,7 @@ namespace Solucion.Formulario
 
         private void FrmHoteles_Load(object sender, EventArgs e)
         {
+
             List<string> listaHoteles = new List<string>();
 
             HotelServicio servicio = new HotelServicio();
