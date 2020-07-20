@@ -120,6 +120,8 @@ namespace Solucion.Formulario
                     textBox1.Clear();
                     textBox2.Clear();
                     textBox3.Clear();
+
+                    this.Owner.Refresh();
                 }
                 else
                 {
@@ -128,6 +130,8 @@ namespace Solucion.Formulario
                     textBox1.Clear();
                     textBox2.Clear();
                     textBox3.Clear();
+
+                    this.Owner.Refresh();
                 }
             }
             catch (Exception ex)

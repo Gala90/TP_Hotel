@@ -36,6 +36,8 @@ namespace Solucion.Formulario
             listBox1.DataSource = listaclientes;
         }
 
+ 
+
         private void BtnVolverCliente_Click(object sender, EventArgs e)
         {
             this.Owner.Show();

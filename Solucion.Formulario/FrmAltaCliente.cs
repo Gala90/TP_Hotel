@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Schema;
 
 namespace Solucion.Formulario
 {
@@ -85,6 +86,9 @@ namespace Solucion.Formulario
                 textemail.Clear();
                 textTelefono.Clear();
                 textDireccion.Clear();
+
+                this.Owner.Refresh();
+
             }
             catch (Exception ex)
             {
@@ -95,8 +99,9 @@ namespace Solucion.Formulario
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
+
             this.Owner.Show();
-            this.Dispose();
+            this.Close();
         }
 
         private void btnlimpiar_Click(object sender, EventArgs e)

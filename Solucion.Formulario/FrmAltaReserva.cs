@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Solucion.Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -62,5 +63,32 @@ namespace Solucion.Formulario
 
 
         }
+
+        //////////////////////////////////////////////////////////////////////
+        ///Esta parte esta comentada porque falta agregar el id habitacion a la reserva
+
+        //////////////////////////////////////////////////////////////////////
+
+        /*       private void btnaceptar_Click(object sender, EventArgs e)
+               {
+                   try
+                   {
+                       ReservaServicio servicio = new ReservaServicio();
+
+                       servicio.Agregar_Reserva(Convert.ToInt32(comboID.Text), Convert.ToInt32(textCantidad.Text), Convert.ToDateTime(dateTimePicker1.Value), Convert.ToDateTime(dateTimePicker2.Value);
+                       MessageBox.Show("La reserva ha sigo agregada con exito.");
+
+                   comboID.SelectedIndex = -1;
+                   textCantidad.Clear();
+                   comboBox1.SelectedIndex = -1;
+
+                       this.Owner.Refresh();
+
+                   }
+                   catch (Exception ex)
+                   {
+                       MessageBox.Show(ex.Message);
+                   }
+               }*/
     }
 }
