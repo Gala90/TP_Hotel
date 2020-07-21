@@ -64,6 +64,11 @@ namespace Solucion.Formulario
 
         }
 
+        private void btnaceptar_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //////////////////////////////////////////////////////////////////////
         ///Esta parte esta comentada porque falta agregar el id habitacion a la reserva
 

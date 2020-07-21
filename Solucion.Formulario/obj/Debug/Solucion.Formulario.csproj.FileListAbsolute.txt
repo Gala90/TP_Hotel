@@ -34,3 +34,4 @@ C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Formulario\obj\Debug\Soluci
 C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Formulario\obj\Debug\Solucion.Formulario.csproj.CopyComplete
 C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Formulario\obj\Debug\Solucion.Formulario.exe
 C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Formulario\obj\Debug\Solucion.Formulario.pdb
+C:\Users\Graciela\Documents\GitHub\TP_Hotel\Solucion.Formulario\obj\Debug\Solucion.Formulario.FrmHabitaciones.resources

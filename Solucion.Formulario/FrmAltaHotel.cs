@@ -140,5 +140,9 @@ namespace Solucion.Formulario
             }
         }
 
+        private void btnagregarhabitacion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

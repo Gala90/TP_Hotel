@@ -38,7 +38,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnagregarhabitacion = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
@@ -98,7 +97,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 332);
+            this.button1.Location = new System.Drawing.Point(25, 311);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 24);
             this.button1.TabIndex = 11;
@@ -108,7 +107,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(113, 333);
+            this.button2.Location = new System.Drawing.Point(151, 311);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 23);
             this.button2.TabIndex = 12;
@@ -118,9 +117,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(214, 333);
+            this.button3.Location = new System.Drawing.Point(26, 257);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 24);
+            this.button3.Size = new System.Drawing.Size(209, 24);
             this.button3.TabIndex = 13;
             this.button3.Text = "Crear";
             this.button3.UseVisualStyleBackColor = true;
@@ -136,15 +135,6 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Alta Hotel";
             // 
-            // btnagregarhabitacion
-            // 
-            this.btnagregarhabitacion.Location = new System.Drawing.Point(47, 261);
-            this.btnagregarhabitacion.Name = "btnagregarhabitacion";
-            this.btnagregarhabitacion.Size = new System.Drawing.Size(203, 23);
-            this.btnagregarhabitacion.TabIndex = 18;
-            this.btnagregarhabitacion.Text = "Agregar Habitacion";
-            this.btnagregarhabitacion.UseVisualStyleBackColor = true;
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -159,9 +149,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(323, 392);
+            this.ClientSize = new System.Drawing.Size(281, 373);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.btnagregarhabitacion);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -192,7 +181,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnagregarhabitacion;
         private System.Windows.Forms.CheckBox checkBox1;
     }
 }

@@ -49,5 +49,13 @@ namespace Solucion.Formulario
             f2.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmHabitaciones f2 = new FrmHabitaciones();
+            f2.Owner = this;
+            f2.Show();
+            this.Hide();
+        }
     }
 }

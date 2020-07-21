@@ -34,11 +34,12 @@
             this.btnVolverHotel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAltaHotel
             // 
-            this.btnAltaHotel.Location = new System.Drawing.Point(67, 412);
+            this.btnAltaHotel.Location = new System.Drawing.Point(46, 349);
             this.btnAltaHotel.Name = "btnAltaHotel";
             this.btnAltaHotel.Size = new System.Drawing.Size(454, 43);
             this.btnAltaHotel.TabIndex = 0;
@@ -48,7 +49,7 @@
             // 
             // btnBajaHotel
             // 
-            this.btnBajaHotel.Location = new System.Drawing.Point(67, 482);
+            this.btnBajaHotel.Location = new System.Drawing.Point(46, 419);
             this.btnBajaHotel.Name = "btnBajaHotel";
             this.btnBajaHotel.Size = new System.Drawing.Size(454, 44);
             this.btnBajaHotel.TabIndex = 1;
@@ -57,7 +58,7 @@
             // 
             // btnModifHotel
             // 
-            this.btnModifHotel.Location = new System.Drawing.Point(67, 553);
+            this.btnModifHotel.Location = new System.Drawing.Point(46, 490);
             this.btnModifHotel.Name = "btnModifHotel";
             this.btnModifHotel.Size = new System.Drawing.Size(454, 44);
             this.btnModifHotel.TabIndex = 2;
@@ -89,14 +90,25 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(26, 64);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(547, 303);
+            this.listBox1.Size = new System.Drawing.Size(499, 251);
             this.listBox1.TabIndex = 32;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(46, 561);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(454, 44);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "Habitaciones";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmHoteles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(676, 672);
+            this.ClientSize = new System.Drawing.Size(615, 672);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnVolverHotel);
@@ -119,5 +131,6 @@
         private System.Windows.Forms.Button btnVolverHotel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

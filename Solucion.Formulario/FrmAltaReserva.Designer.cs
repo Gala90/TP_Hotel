@@ -72,6 +72,7 @@
             this.btnaceptar.TabIndex = 23;
             this.btnaceptar.Text = "Crear";
             this.btnaceptar.UseVisualStyleBackColor = true;
+            this.btnaceptar.Click += new System.EventHandler(this.btnaceptar_Click);
             // 
             // label5
             // 

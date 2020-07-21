@@ -36,12 +36,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.btnagregar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnlimpiar = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label7
@@ -113,24 +113,22 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Standard",
+            "Premium",
+            "Deluxe"});
             this.comboBox1.Location = new System.Drawing.Point(96, 113);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(122, 21);
             this.comboBox1.TabIndex = 27;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(96, 158);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(122, 21);
-            this.comboBox2.TabIndex = 28;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Reembolsable",
+            "No Reembolsable"});
             this.comboBox3.Location = new System.Drawing.Point(96, 201);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(122, 21);
@@ -148,9 +146,9 @@
             // 
             // btnagregar
             // 
-            this.btnagregar.Location = new System.Drawing.Point(28, 370);
+            this.btnagregar.Location = new System.Drawing.Point(28, 311);
             this.btnagregar.Name = "btnagregar";
-            this.btnagregar.Size = new System.Drawing.Size(192, 23);
+            this.btnagregar.Size = new System.Drawing.Size(192, 33);
             this.btnagregar.TabIndex = 31;
             this.btnagregar.Text = "Agregar";
             this.btnagregar.UseVisualStyleBackColor = true;
@@ -158,7 +156,7 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(28, 425);
+            this.btnVolver.Location = new System.Drawing.Point(25, 380);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 38;
@@ -168,7 +166,7 @@
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.Location = new System.Drawing.Point(143, 425);
+            this.btnlimpiar.Location = new System.Drawing.Point(143, 380);
             this.btnlimpiar.Name = "btnlimpiar";
             this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
             this.btnlimpiar.TabIndex = 37;
@@ -176,17 +174,24 @@
             this.btnlimpiar.UseVisualStyleBackColor = true;
             this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(96, 158);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(122, 20);
+            this.textBox2.TabIndex = 39;
+            // 
             // FrmAltaHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(267, 475);
+            this.ClientSize = new System.Drawing.Size(245, 438);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label6);
@@ -197,6 +202,7 @@
             this.Controls.Add(this.label7);
             this.Name = "FrmAltaHabitacion";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.FrmAltaHabitacion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,11 +218,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Button btnagregar;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

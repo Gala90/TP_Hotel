@@ -18,13 +18,13 @@ namespace Solucion.Consola
             {
                 
                 
-                ReservaServicio servicio = new ReservaServicio();
+                HabitacionServicio servicio = new HabitacionServicio();
 
 
 
-               List<Reserva> lst = servicio.TraerReservas();
+               List<Habitacion> lst = servicio.TraerHabitaciones(1);
 
-               foreach (Reserva c in lst)
+               foreach (Habitacion c in lst)
                {
                    Console.WriteLine(c);
                }
