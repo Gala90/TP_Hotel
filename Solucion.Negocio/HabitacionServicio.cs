@@ -34,5 +34,35 @@ namespace Solucion.Negocio
                 throw new Exception("Hubo un error en la petición al servidor. Detalle: " + resultante.Error);
 
         }
+
+        public bool validarDispo(int id, ReservaServicio rs, HabitacionServicio hs, HotelServicio hts)
+        {
+            bool dispo = true;
+
+            foreach (Hotel ht in hts.TraerHoteles())
+            {
+                foreach (Habitacion h in hs.TraerHabitaciones(ht.id))
+                {
+                    if (id == h.id)
+                    {
+                        int cant = h.cantidadplazas;
+
+                        foreach (Reserva r in rs.TraerReservas())
+                        {
+
+                            if (r.idHabitacion == id)
+                            {
+                                cant--;
+                                if (cant == 0)
+                                {
+                                    dispo = false;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return dispo;
+        }
     }
 }

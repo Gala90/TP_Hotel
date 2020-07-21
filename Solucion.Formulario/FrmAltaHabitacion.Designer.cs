@@ -42,6 +42,7 @@
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnlimpiar = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label7
@@ -57,7 +58,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 115);
+            this.label2.Location = new System.Drawing.Point(22, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 20;
@@ -67,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 161);
+            this.label3.Location = new System.Drawing.Point(22, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 21;
@@ -77,7 +78,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(22, 204);
+            this.label4.Location = new System.Drawing.Point(22, 233);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 13);
             this.label4.TabIndex = 22;
@@ -97,27 +98,29 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(22, 249);
+            this.label6.Location = new System.Drawing.Point(22, 278);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 24;
             this.label6.Text = "Precio";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(96, 246);
+            this.textBox1.Location = new System.Drawing.Point(96, 275);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(122, 20);
             this.textBox1.TabIndex = 26;
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Standard",
             "Premium",
             "Deluxe"});
-            this.comboBox1.Location = new System.Drawing.Point(96, 113);
+            this.comboBox1.Location = new System.Drawing.Point(96, 142);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(122, 21);
             this.comboBox1.TabIndex = 27;
@@ -125,11 +128,12 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Reembolsable",
             "No Reembolsable"});
-            this.comboBox3.Location = new System.Drawing.Point(96, 201);
+            this.comboBox3.Location = new System.Drawing.Point(96, 230);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(122, 21);
             this.comboBox3.TabIndex = 29;
@@ -137,6 +141,7 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(96, 69);
             this.comboBox4.Name = "comboBox4";
@@ -146,7 +151,7 @@
             // 
             // btnagregar
             // 
-            this.btnagregar.Location = new System.Drawing.Point(28, 311);
+            this.btnagregar.Location = new System.Drawing.Point(28, 340);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(192, 33);
             this.btnagregar.TabIndex = 31;
@@ -156,7 +161,7 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(25, 380);
+            this.btnVolver.Location = new System.Drawing.Point(25, 409);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 38;
@@ -166,7 +171,7 @@
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.Location = new System.Drawing.Point(143, 380);
+            this.btnlimpiar.Location = new System.Drawing.Point(143, 409);
             this.btnlimpiar.Name = "btnlimpiar";
             this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
             this.btnlimpiar.TabIndex = 37;
@@ -176,16 +181,24 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(96, 158);
+            this.textBox2.Location = new System.Drawing.Point(96, 187);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(122, 20);
             this.textBox2.TabIndex = 39;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(25, 106);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(193, 20);
+            this.textBox3.TabIndex = 43;
             // 
             // FrmAltaHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(245, 438);
+            this.ClientSize = new System.Drawing.Size(259, 479);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnlimpiar);
@@ -224,5 +237,6 @@
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnlimpiar;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

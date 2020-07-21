@@ -33,6 +33,7 @@ namespace Solucion.Formulario
             comboBox3.SelectedIndex = -1;
             comboBox4.SelectedIndex = -1;
             textBox1.Clear();
+            textBox3.Clear();
 
 
         }
@@ -42,10 +43,7 @@ namespace Solucion.Formulario
 
         }
 
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
@@ -140,6 +138,8 @@ namespace Solucion.Formulario
                   comboBox4.ValueMember = h.id.ToString();
               }*/
 
+            textBox3.Enabled = false;
+
             List<string> listaHoteles = new List<string>();
 
             HotelServicio servicio = new HotelServicio();
@@ -154,6 +154,35 @@ namespace Solucion.Formulario
 
 
             comboBox4.DataSource = listaHoteles;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+            List<string> listaHoteles = new List<string>();
+
+            HotelServicio servicio = new HotelServicio();
+
+            List<Hotel> lst = servicio.TraerHoteles();
+
+            foreach (Hotel Hotel in lst)
+            {
+                if (comboBox4.Text == Hotel.id.ToString())
+                {
+                    textBox3.Text = Hotel.nombre;
+                }
+
+            }
+
+
+
+
         }
     }
 }

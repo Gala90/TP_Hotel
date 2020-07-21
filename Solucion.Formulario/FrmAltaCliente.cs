@@ -80,7 +80,7 @@ namespace Solucion.Formulario
             { 
             ClienteServicio servicio = new ClienteServicio();
             servicio.Alta_Cliente(textNombre.Text.ToString(), textApellido.Text.ToString(), textDireccion.Text.ToString(), textemail.Text.ToString(), textTelefono.Text.ToString(), DateTime.Today, true);
-                MessageBox.Show("El cliente ha sido agregado con exito");
+                MessageBox.Show("El cliente " + textNombre.Text.ToString() + " " + textApellido.Text.ToString() + " ha sido agregado con exito");
                 textNombre.Clear();
                 textApellido.Clear();
                 textemail.Clear();
@@ -96,6 +96,8 @@ namespace Solucion.Formulario
 
             }
         }
+
+        //MessageBox.Show("El Hotel " + textBox1.Text.ToString() + " ha sido agregado.");
 
         private void btnVolver_Click(object sender, EventArgs e)
         {

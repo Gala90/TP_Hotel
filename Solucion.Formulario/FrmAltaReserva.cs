@@ -35,20 +35,6 @@ namespace Solucion.Formulario
             comboID.DataSource = listaHoteles;
 
 
-            List<string> listaclientes = new List<string>();
-
-            ClienteServicio serviciocliente = new ClienteServicio();
-
-            List<Cliente> lstcliente = serviciocliente.TraerClientes();
-
-            foreach (Cliente cliente in lstcliente)
-            {
-                listaclientes.Add(cliente.Codigo.ToString());
-            }
-
-            comboBox2.DataSource = listaclientes;
-
-
 
         }
 
@@ -76,7 +62,7 @@ namespace Solucion.Formulario
             foreach (Hotel Hotel in lst)
             {
                 if (Hotel.id.ToString() == comboID.Text)
-                    textBox1.Text = Hotel.ToString();
+                    textBox1.Text = Hotel.nombre;
             }
 
 
@@ -114,8 +100,10 @@ namespace Solucion.Formulario
 
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
-            comboID.SelectedIndex = -1;
+            
             textCantidad.Clear();
+            textBox1.Clear();
+            textBox3.Clear();
             comboBox1.SelectedIndex = -1;
 
 
@@ -127,17 +115,32 @@ namespace Solucion.Formulario
                private void btnaceptar_Click(object sender, EventArgs e)
                {
                 try
-                   {
-                       ReservaServicio servicio = new ReservaServicio();
-
-                       servicio.Agregar_Reserva(Convert.ToInt32(comboBox1.Text), Convert.ToInt32(comboBox2.Text), Convert.ToInt32(textCantidad.Text), Convert.ToDateTime(dateTimePicker1.Value), Convert.ToDateTime(dateTimePicker2.Value));
-                       MessageBox.Show("La reserva ha sigo agregada con exito.");
-
+               {
+                     HabitacionServicio serviciohabitacion = new HabitacionServicio();
+                     HotelServicio serviciohotel = new HotelServicio();
+                     ReservaServicio servicioreserva = new ReservaServicio();
 
 
-                       this.Owner.Refresh();
 
-                   }
+                if (serviciohabitacion.validarDispo(Convert.ToInt32(comboBox1.Text), servicioreserva, serviciohabitacion, serviciohotel))
+                {
+
+                    ReservaServicio servicio = new ReservaServicio();
+
+                    servicio.Agregar_Reserva(Convert.ToInt32(comboBox1.Text), Convert.ToInt32(textBox3.Text), Convert.ToInt32(textCantidad.Text), Convert.ToDateTime(dateTimePicker1.Value), Convert.ToDateTime(dateTimePicker2.Value));
+                    MessageBox.Show("La reserva ha sido creada con exito.");
+
+
+
+                    this.Owner.Refresh();
+                }
+
+                else
+                {
+                    MessageBox.Show("La habitacion seleccionada no se encuentra disponible.");
+                }
+
+                }
                    catch (Exception ex)
                    {
                        MessageBox.Show(ex.Message);
@@ -145,25 +148,16 @@ namespace Solucion.Formulario
         
                }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
-            textBox2.Text = "";
-
-            List<string> listaclientes = new List<string>();
-
-            ClienteServicio serviciocliente = new ClienteServicio();
-
-            List<Cliente> lstcliente = serviciocliente.TraerClientes();
-
-            foreach (Cliente cliente in lstcliente)
-            {
-                  if (cliente.Codigo.ToString() == comboBox2.Text)
-                    textBox2.Text = cliente.ToString();
-            }
-
- 
         }
 
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
