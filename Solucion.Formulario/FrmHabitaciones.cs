@@ -42,15 +42,31 @@ namespace Solucion.Formulario
 
         private void FrmHabitaciones_Load(object sender, EventArgs e)
         {
-            HotelServicio _servicioHotel = new HotelServicio();
+            /*           HotelServicio _servicioHotel = new HotelServicio();
 
-            foreach (Hotel h in _servicioHotel.TraerHoteles())
+                        foreach (Hotel h in _servicioHotel.TraerHoteles())
 
+                        {
+                            comboBox1.Items.Add(h.nombre);
+                            comboBox1.ValueMember = h.id.ToString();
+                        }*/
+
+            textBox1.Enabled = false;
+
+            List<string> listaHoteles = new List<string>();
+
+            HotelServicio servicio = new HotelServicio();
+
+            List<Hotel> lst = servicio.TraerHoteles();
+
+            foreach (Hotel Hotel in lst)
             {
-                comboBox1.Items.Add(h.nombre);
-                comboBox1.ValueMember = h.id.ToString();
+                listaHoteles.Add(Hotel.id.ToString());
             }
 
+            
+
+            comboBox1.DataSource = listaHoteles;
 
         }
 
@@ -67,6 +83,24 @@ namespace Solucion.Formulario
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+          
+                List<string> listaHoteles = new List<string>();
+
+                HotelServicio servicio = new HotelServicio();
+
+                List<Hotel> lst = servicio.TraerHoteles();
+
+                foreach (Hotel Hotel in lst)
+                {
+                       if (comboBox1.Text == Hotel.id.ToString())
+                {
+                    textBox1.Text = Hotel.ToString();
+                }
+
+                }
+
+            
+
 
         }
 
@@ -76,7 +110,7 @@ namespace Solucion.Formulario
 
             HabitacionServicio servicio = new HabitacionServicio();
 
-            List<Habitacion> lst = servicio.TraerHabitaciones(Convert.ToInt32(comboBox1.ValueMember));
+            List<Habitacion> lst = servicio.TraerHabitaciones(Convert.ToInt32(comboBox1.Text));
 
             foreach (Habitacion h in lst)
             {
