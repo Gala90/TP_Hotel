@@ -11,3 +11,16 @@ C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\obj\Debug\Datos.csproj.CoreCom
 C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\obj\Debug\Datos.dll
 C:\Users\Graciela\Documents\GitHub\TP_Hotel\Datos\obj\Debug\Datos.pdb
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\bin\Debug\Datos.dll.config
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\bin\Debug\Datos.dll
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\bin\Debug\Datos.pdb
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\bin\Debug\Entidades.dll
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\bin\Debug\Entidades.pdb
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\bin\Debug\Entidades.dll.config
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\obj\Debug\Datos.dll
+C:\Users\Remdos\Desktop\TP_Hotel-master\Datos\obj\Debug\Datos.pdb
