@@ -18,8 +18,8 @@ namespace Datos
         {
             client = new WebClient();
             client.Encoding = Encoding.UTF8;
-            //rutaBase = ConfigurationManager.AppSettings["URL_API"];
-            rutaBase = "https://cai-api.azurewebsites.net";
+            rutaBase = ConfigurationManager.AppSettings["URL_API"];
+            //rutaBase = "https://cai-api.azurewebsites.net";
 
             client.Headers.Add("ContentType", "application/json");
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;

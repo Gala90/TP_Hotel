@@ -14,7 +14,7 @@ namespace Datos
     {
         public List<Cliente> TraerTodos()
         {
-            string json = WebHelper.Get("/api/v1/cliente/886003");
+            string json = WebHelper.Get("/api/v1/cliente/" + ConfigurationManager.AppSettings["Legajo"]);
             List<Cliente> resultado = MapList(json);
             return resultado;
         }
@@ -27,7 +27,7 @@ namespace Datos
         public ResultadoTransaccion Insert(Cliente cliente)
         {
             NameValueCollection obj = ReverseMap(cliente);
-            string result = WebHelper.Post("/api/v1/cliente/886003", obj);
+            string result = WebHelper.Post("/api/v1/cliente", obj);
             ResultadoTransaccion resultadoTransaccion = MapResultado(result);
             return resultadoTransaccion;
         }
@@ -43,6 +43,7 @@ namespace Datos
             n.Add("Telefono", cliente.Telefono);
             n.Add("FechaAlta", cliente.FechaAlta.ToString());           
             n.Add("Activo", cliente.Activo.ToString());
+            n.Add("Usuario", ConfigurationManager.AppSettings["Legajo"]);
             return n;
         }
 
