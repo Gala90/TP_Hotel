@@ -76,7 +76,7 @@ namespace Entidades
         public override string ToString()
         {
 
-            return "ID Reserva: "+ this._id + " Habitacion: " + this._idHabitacion + " Cliente: " + this._idCliente + " Huespedes: " + this._cantidadhuespedes /* + " Check In: " + this._fecha_ingreso.Day + "/" + this._fecha_ingreso.Month + "/" + this._fecha_ingreso.Year + " Check Out: " + this._fecha_egreso.Day + "/" + this._fecha_egreso.Month + "/" + this._fecha_egreso.Year */;
+            return "ID Reserva: "+ this._id + " Habitacion: " + this._idHabitacion + " Cliente: " + this._idCliente + " Huespedes: " + this._cantidadhuespedes ;
 
                 
 

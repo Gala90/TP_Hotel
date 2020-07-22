@@ -33,8 +33,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnVolverHotel = new System.Windows.Forms.Button();
-            this.btnModifHotel = new System.Windows.Forms.Button();
-            this.btnBajaHotel = new System.Windows.Forms.Button();
             this.btnAltaHotel = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -79,31 +77,13 @@
             // 
             // btnVolverHotel
             // 
-            this.btnVolverHotel.Location = new System.Drawing.Point(26, 593);
+            this.btnVolverHotel.Location = new System.Drawing.Point(26, 475);
             this.btnVolverHotel.Name = "btnVolverHotel";
             this.btnVolverHotel.Size = new System.Drawing.Size(88, 34);
             this.btnVolverHotel.TabIndex = 40;
             this.btnVolverHotel.Text = "Volver";
             this.btnVolverHotel.UseVisualStyleBackColor = true;
             this.btnVolverHotel.Click += new System.EventHandler(this.btnVolverHotel_Click);
-            // 
-            // btnModifHotel
-            // 
-            this.btnModifHotel.Location = new System.Drawing.Point(48, 528);
-            this.btnModifHotel.Name = "btnModifHotel";
-            this.btnModifHotel.Size = new System.Drawing.Size(454, 44);
-            this.btnModifHotel.TabIndex = 39;
-            this.btnModifHotel.Text = "Modificar";
-            this.btnModifHotel.UseVisualStyleBackColor = true;
-            // 
-            // btnBajaHotel
-            // 
-            this.btnBajaHotel.Location = new System.Drawing.Point(48, 467);
-            this.btnBajaHotel.Name = "btnBajaHotel";
-            this.btnBajaHotel.Size = new System.Drawing.Size(454, 44);
-            this.btnBajaHotel.TabIndex = 38;
-            this.btnBajaHotel.Text = "Baja";
-            this.btnBajaHotel.UseVisualStyleBackColor = true;
             // 
             // btnAltaHotel
             // 
@@ -136,12 +116,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 639);
+            this.ClientSize = new System.Drawing.Size(561, 540);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVolverHotel);
-            this.Controls.Add(this.btnModifHotel);
-            this.Controls.Add(this.btnBajaHotel);
             this.Controls.Add(this.btnAltaHotel);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
@@ -162,8 +140,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnVolverHotel;
-        private System.Windows.Forms.Button btnModifHotel;
-        private System.Windows.Forms.Button btnBajaHotel;
         private System.Windows.Forms.Button btnAltaHotel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;

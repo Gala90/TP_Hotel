@@ -30,7 +30,6 @@
         {
             this.BtnAltaCliente = new System.Windows.Forms.Button();
             this.BtnVolverCliente = new System.Windows.Forms.Button();
-            this.btnModifCliente = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
@@ -47,22 +46,13 @@
             // 
             // BtnVolverCliente
             // 
-            this.BtnVolverCliente.Location = new System.Drawing.Point(24, 566);
+            this.BtnVolverCliente.Location = new System.Drawing.Point(24, 466);
             this.BtnVolverCliente.Name = "BtnVolverCliente";
             this.BtnVolverCliente.Size = new System.Drawing.Size(105, 37);
             this.BtnVolverCliente.TabIndex = 3;
             this.BtnVolverCliente.Text = "Volver";
             this.BtnVolverCliente.UseVisualStyleBackColor = true;
             this.BtnVolverCliente.Click += new System.EventHandler(this.BtnVolverCliente_Click);
-            // 
-            // btnModifCliente
-            // 
-            this.btnModifCliente.Location = new System.Drawing.Point(65, 456);
-            this.btnModifCliente.Name = "btnModifCliente";
-            this.btnModifCliente.Size = new System.Drawing.Size(450, 52);
-            this.btnModifCliente.TabIndex = 4;
-            this.btnModifCliente.Text = "Modificar";
-            this.btnModifCliente.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -86,10 +76,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 633);
+            this.ClientSize = new System.Drawing.Size(581, 532);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.btnModifCliente);
             this.Controls.Add(this.BtnVolverCliente);
             this.Controls.Add(this.BtnAltaCliente);
             this.Name = "FrmClientes";
@@ -104,7 +93,6 @@
 
         private System.Windows.Forms.Button BtnAltaCliente;
         private System.Windows.Forms.Button BtnVolverCliente;
-        private System.Windows.Forms.Button btnModifCliente;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ListBox listBox1;
     }
