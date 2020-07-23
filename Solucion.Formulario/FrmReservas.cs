@@ -48,5 +48,14 @@ namespace Solucion.Formulario
             f2.Show();
             this.Hide();
         }
+
+        private void btnModifReserva_Click(object sender, EventArgs e)
+        {
+            FrmModificarReserva f2 = new FrmModificarReserva();
+            f2.Owner = this;
+            f2.Show();
+            this.Hide();
+
+        }
     }
 }

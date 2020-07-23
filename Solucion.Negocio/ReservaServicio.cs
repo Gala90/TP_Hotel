@@ -34,5 +34,44 @@ namespace Solucion.Negocio
                 throw new Exception("Hubo un error en la petición al servidor. Detalle: " + resultante.Error);
 
         }
+
+        public Reserva TraerReserva(int id)
+        {
+            Reserva reserva = null;
+
+            foreach (Reserva r in mapper.TraerTodos())
+            {
+                if (r.id == id)
+                {
+                    reserva = r;
+                    return reserva;
+                }
+            }
+            return reserva;
+        }
+
+
+
+        public int Modificar_Reserva(int idReserva, int idHabitacion, int idCliente, int cantidadhuespedes, DateTime fecha_ingreso, DateTime fecha_egreso)
+        {
+            Reserva reserva = TraerReserva(idReserva);
+             
+            if (reserva != null)
+            {
+                reserva.idHabitacion = idHabitacion;
+                reserva.idCliente = idCliente;
+                reserva.cantidadhuespedes = cantidadhuespedes;
+                reserva.fecha_ingreso = fecha_ingreso;
+                reserva.fecha_egreso = fecha_egreso;
+            }
+
+            ResultadoTransaccion resultante = mapper.Update(reserva);
+
+            if (resultante.IsOk)
+                return resultante.Id;
+            else
+                throw new Exception("Hubo un error en la petición al servidor. Detalle: " + resultante.Error);
+
+        }
     }
 }

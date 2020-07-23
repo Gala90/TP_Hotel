@@ -73,6 +73,7 @@
             this.btnModifReserva.TabIndex = 5;
             this.btnModifReserva.Text = "Modificar";
             this.btnModifReserva.UseVisualStyleBackColor = true;
+            this.btnModifReserva.Click += new System.EventHandler(this.btnModifReserva_Click);
             // 
             // label7
             // 
