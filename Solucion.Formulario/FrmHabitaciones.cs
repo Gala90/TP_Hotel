@@ -70,12 +70,7 @@ namespace Solucion.Formulario
 
         }
 
-        /*
-        Lista de habitacion
 
-
-
-        */
 
 
         
@@ -99,26 +94,22 @@ namespace Solucion.Formulario
 
                 }
 
-            
-
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
             List<string> listaHabitaciones = new List<string>();
 
-            HabitacionServicio servicio = new HabitacionServicio();
+            HabitacionServicio servicio2 = new HabitacionServicio();
 
-            List<Habitacion> lst = servicio.TraerHabitaciones(Convert.ToInt32(comboBox1.Text));
+            List<Habitacion> lst2 = servicio2.TraerHabitaciones(Convert.ToInt32(comboBox1.Text));
 
-            foreach (Habitacion h in lst)
+            foreach (Habitacion h in lst2)
             {
                 listaHabitaciones.Add(h.ToString());
             }
 
             listBox1.DataSource = listaHabitaciones;
 
+
+
         }
+
     }
 }

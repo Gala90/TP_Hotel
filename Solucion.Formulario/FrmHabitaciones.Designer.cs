@@ -34,7 +34,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnVolverHotel = new System.Windows.Forms.Button();
             this.btnAltaHotel = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -95,16 +94,6 @@
             this.btnAltaHotel.UseVisualStyleBackColor = true;
             this.btnAltaHotel.Click += new System.EventHandler(this.btnAltaHotel_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(371, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 24);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "Mostrar Habitaciones";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(26, 90);
@@ -118,7 +107,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 540);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVolverHotel);
             this.Controls.Add(this.btnAltaHotel);
             this.Controls.Add(this.comboBox1);
@@ -141,7 +129,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnVolverHotel;
         private System.Windows.Forms.Button btnAltaHotel;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
     }
 }
