@@ -52,7 +52,7 @@ namespace Solucion.Consola
                  
                 */
 
-                int id = servicio.Modificar_Reserva(25,7, 84, 2, DateTime.Today.AddDays(1), DateTime.Today.AddDays(3));
+                int id = servicio.Modificar_Reserva(27,7, 84, 2, DateTime.Today.AddDays(1), DateTime.Today.AddDays(3));
                 Console.WriteLine("Reserva: " + id);
 
 
