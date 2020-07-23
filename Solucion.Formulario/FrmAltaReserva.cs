@@ -120,24 +120,30 @@ namespace Solucion.Formulario
                      HotelServicio serviciohotel = new HotelServicio();
                      ReservaServicio servicioreserva = new ReservaServicio();
 
-
-
-                if (serviciohabitacion.validarDispo(Convert.ToInt32(comboBox1.Text), servicioreserva, serviciohabitacion, serviciohotel))
+                if (dateTimePicker1.Value > DateTime.Today && dateTimePicker2.Value > dateTimePicker1.Value)
                 {
 
-                    ReservaServicio servicio = new ReservaServicio();
+                    if (serviciohabitacion.validarDispo(Convert.ToInt32(comboBox1.Text), servicioreserva, serviciohabitacion, serviciohotel))
+                    {
 
-                    servicio.Agregar_Reserva(Convert.ToInt32(comboBox1.Text), Convert.ToInt32(textBox3.Text), Convert.ToInt32(textCantidad.Text), Convert.ToDateTime(dateTimePicker1.Value), Convert.ToDateTime(dateTimePicker2.Value));
-                    MessageBox.Show("La reserva ha sido creada con exito.");
+                        ReservaServicio servicio = new ReservaServicio();
+
+                        servicio.Agregar_Reserva(Convert.ToInt32(comboBox1.Text), Convert.ToInt32(textBox3.Text), Convert.ToInt32(textCantidad.Text), Convert.ToDateTime(dateTimePicker1.Value), Convert.ToDateTime(dateTimePicker2.Value));
+                        MessageBox.Show("La reserva ha sido creada con exito.");
 
 
 
-                    this.Owner.Refresh();
+                        this.Owner.Refresh();
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("La habitacion seleccionada no se encuentra disponible.");
+                    }
                 }
-
                 else
                 {
-                    MessageBox.Show("La habitacion seleccionada no se encuentra disponible.");
+                    MessageBox.Show("Ingrese una fecha futura.");
                 }
 
                 }
