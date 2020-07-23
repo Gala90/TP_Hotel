@@ -20,7 +20,7 @@ namespace Solucion.Consola
                 
                 ReservaServicio servicio = new ReservaServicio();
 
-                
+                /*
 
                List<Reserva> lst = servicio.TraerReservas();
 
@@ -29,7 +29,7 @@ namespace Solucion.Consola
                    Console.WriteLine(c);
                }
 
-                /*
+                
 
 
                  int id = servicio.Alta_Cliente("Claudio", "Rodriguez", "Ayacucho 123", "456@gmail.com", "44444444", DateTime.Today , true);
@@ -41,16 +41,19 @@ namespace Solucion.Consola
 
                  int id = servicio.Alta_Habitacion(2,"Deluxe", 8, false, 500);
                  Console.WriteLine("Habitacion: " + id);
-                */
+                
 
 
 
 
-                 int id = servicio.Modificar_Reserva(25,9, 84, 1, DateTime.Today, DateTime.Today.AddDays(3));
+                int id = servicio.Modificar_Reserva(25,7, 84, 2, DateTime.Today.AddDays(1), DateTime.Today.AddDays(3));
                  Console.WriteLine("Reserva: " + id);
 
                  
+                */
 
+                int id = servicio.Modificar_Reserva(25,7, 84, 2, DateTime.Today.AddDays(1), DateTime.Today.AddDays(3));
+                Console.WriteLine("Reserva: " + id);
 
 
 

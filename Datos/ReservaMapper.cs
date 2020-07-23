@@ -54,7 +54,7 @@ namespace Datos
         public ResultadoTransaccion Update(Reserva reserva)
         {
             NameValueCollection obj = ReverseMap(reserva);
-            string resultadoPut = WebHelper.Put("/api/v1/hotel/Reservas/", obj);
+            string resultadoPut = WebHelper.Put("/api/v1/Hotel/Reservas", obj);
 
             ResultadoTransaccion resultado = MapResultado(resultadoPut);
 

@@ -58,7 +58,7 @@ namespace Datos
 
             try
             {
-                var response = client.UploadValues(uri, parametros);
+                var response = client.UploadValues(uri, "PUT", parametros);
 
                 var responseString = Encoding.Default.GetString(response);
 

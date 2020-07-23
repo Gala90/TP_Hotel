@@ -55,7 +55,7 @@ namespace Solucion.Negocio
         public int Modificar_Reserva(int idReserva, int idHabitacion, int idCliente, int cantidadhuespedes, DateTime fecha_ingreso, DateTime fecha_egreso)
         {
             Reserva reserva = TraerReserva(idReserva);
-             
+
             if (reserva != null)
             {
                 reserva.idHabitacion = idHabitacion;
@@ -63,14 +63,22 @@ namespace Solucion.Negocio
                 reserva.cantidadhuespedes = cantidadhuespedes;
                 reserva.fecha_ingreso = fecha_ingreso;
                 reserva.fecha_egreso = fecha_egreso;
+                
+
+
+                ResultadoTransaccion resultante = mapper.Update(reserva);
+
+                if (resultante.IsOk)
+                    return resultante.Id;
+                else
+                    throw new Exception("Hubo un error en la petición al servidor. Detalle: " + resultante.Error);
+
             }
 
-            ResultadoTransaccion resultante = mapper.Update(reserva);
-
-            if (resultante.IsOk)
-                return resultante.Id;
             else
-                throw new Exception("Hubo un error en la petición al servidor. Detalle: " + resultante.Error);
+            {
+                throw new Exception("Reserva Inexistente");
+            }
 
         }
     }
