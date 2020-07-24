@@ -34,6 +34,7 @@ namespace Datos
             n.Add("cantidadplazas", p.cantidadplazas.ToString());
             n.Add("cancelacion", p.cancelacion.ToString());
             n.Add("precio", p.precio.ToString());
+            n.Add("id", p.id.ToString());
 
             return n;
         }

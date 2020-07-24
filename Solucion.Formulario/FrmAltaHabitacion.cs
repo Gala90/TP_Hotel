@@ -33,8 +33,7 @@ namespace Solucion.Formulario
             comboBox3.SelectedIndex = -1;
             comboBox4.SelectedIndex = -1;
             textBox1.Clear();
-            textBox3.Clear();
-
+           
 
         }
 
@@ -54,7 +53,7 @@ namespace Solucion.Formulario
 
                 if (comboBox3.Text.ToUpper() == "Reembolsable")
                 {
-                    servicio.Alta_Habitacion(Convert.ToInt32(comboBox4.ValueMember), comboBox1.Text.ToString(), Convert.ToInt32(textBox2.Text),true, Convert.ToDouble(textBox1.Text));
+                    servicio.Alta_Habitacion(Convert.ToInt32(comboBox4.SelectedValue.ToString()), comboBox1.Text.ToString(), Convert.ToInt32(textBox2.Text),true, Convert.ToDouble(textBox1.Text));
 
                     MessageBox.Show("La Habitacion ha sigo agregada con exito.");
                     this.Owner.Refresh();
@@ -64,10 +63,12 @@ namespace Solucion.Formulario
                     comboBox3.SelectedIndex = -1;
                     comboBox4.SelectedIndex = -1;
                     textBox1.Clear();
+
+                    //Convert.ToInt32(comboBox4.ValueMember)
                 }
                 else
                 {
-                    servicio.Alta_Habitacion(Convert.ToInt32(comboBox4.Text), comboBox1.Text.ToString(), Convert.ToInt32(textBox2.Text), false, Convert.ToDouble(textBox1.Text));
+                    servicio.Alta_Habitacion(Convert.ToInt32(comboBox4.SelectedValue.ToString()), comboBox1.Text.ToString(), Convert.ToInt32(textBox2.Text), false, Convert.ToDouble(textBox1.Text));
 
                     MessageBox.Show("La Habitacion ha sigo agregada con exito.");
                     this.Owner.Refresh();
@@ -129,31 +130,12 @@ namespace Solucion.Formulario
 
         private void FrmAltaHabitacion_Load(object sender, EventArgs e)
         {
-            /*  HotelServicio _servicioHotel = new HotelServicio();
-
-              foreach (Hotel h in _servicioHotel.TraerHoteles())
-
-              {
-                  comboBox4.Items.Add(h.nombre);
-                  comboBox4.ValueMember = h.id.ToString();
-              }*/
-
-            textBox3.Enabled = false;
-
-            List<string> listaHoteles = new List<string>();
-
             HotelServicio servicio = new HotelServicio();
-
             List<Hotel> lst = servicio.TraerHoteles();
 
-            foreach (Hotel Hotel in lst)
-            {
-                listaHoteles.Add(Hotel.id.ToString());
-            }
-
-
-
-            comboBox4.DataSource = listaHoteles;
+            comboBox4.DataSource = lst;
+            comboBox4.DisplayMember = "Nombre";
+            comboBox4.ValueMember = "id";
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -165,20 +147,7 @@ namespace Solucion.Formulario
         {
 
 
-            List<string> listaHoteles = new List<string>();
 
-            HotelServicio servicio = new HotelServicio();
-
-            List<Hotel> lst = servicio.TraerHoteles();
-
-            foreach (Hotel Hotel in lst)
-            {
-                if (comboBox4.Text == Hotel.id.ToString())
-                {
-                    textBox3.Text = Hotel.nombre;
-                }
-
-            }
 
 
 

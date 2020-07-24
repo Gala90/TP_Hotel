@@ -21,6 +21,8 @@ namespace Solucion.Formulario
 
         private void FrmAltaReserva_Load(object sender, EventArgs e)
         {
+            /*
+            
             List<string> listaHoteles = new List<string>();
 
             HotelServicio servicio = new HotelServicio();
@@ -32,7 +34,16 @@ namespace Solucion.Formulario
                 listaHoteles.Add(Hotel.id.ToString());
             }
 
-            comboID.DataSource = listaHoteles;
+            comboBox2.DataSource = listaHoteles;
+            */
+
+            HotelServicio servicio = new HotelServicio();
+            List<Hotel> lst = servicio.TraerHoteles();
+
+            comboBox2.DataSource = lst;
+            comboBox2.DisplayMember = "Nombre";
+            comboBox2.ValueMember = "id";
+
 
 
 
@@ -48,30 +59,16 @@ namespace Solucion.Formulario
 
         }
 
-        private void ComboID_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            textBox1.Text = "";
 
-            List<string> listaHoteles = new List<string>();
-
-            HotelServicio servicio = new HotelServicio();
-
-            List<Hotel> lst = servicio.TraerHoteles();
-
-            foreach (Hotel Hotel in lst)
-            {
-                if (Hotel.id.ToString() == comboID.Text)
-                    textBox1.Text = Hotel.nombre;
-            }
-
-
-
+            /*
             List<string> listaHabitaciones = new List<string>();
 
             HabitacionServicio serviciohabitacion = new HabitacionServicio();
 
-            List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(Convert.ToInt32(comboID.Text));
+            List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(Convert.ToInt32(comboBox2.SelectedValue.ToString()));
 
             foreach (Habitacion h in lsthab)
             {
@@ -79,6 +76,27 @@ namespace Solucion.Formulario
             }
 
             comboBox1.DataSource = listaHabitaciones;
+            */
+
+
+
+               // List<int> listaHabitaciones = new List<int>();
+                HabitacionServicio serviciohabitacion = new HabitacionServicio();
+                List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(Convert.ToInt32(comboBox2.SelectedValue.ToString()));
+            /*
+                foreach (Habitacion h in lsthab)
+                {
+                    listaHabitaciones.Add(h.id);
+                }
+            */
+
+                comboBox1.DataSource = lsthab;
+                comboBox1.DisplayMember = "categoria";
+                comboBox1.ValueMember = "id";
+                
+
+
+
         }
 
         private void Label2_Click(object sender, EventArgs e)
@@ -102,7 +120,7 @@ namespace Solucion.Formulario
         {
             
             textCantidad.Clear();
-            textBox1.Clear();
+            //textBox1.Clear();
             textBox3.Clear();
             comboBox1.SelectedIndex = -1;
 
@@ -114,11 +132,11 @@ namespace Solucion.Formulario
 
                private void btnaceptar_Click(object sender, EventArgs e)
                {
-                try
-               {
-                     HabitacionServicio serviciohabitacion = new HabitacionServicio();
-                     HotelServicio serviciohotel = new HotelServicio();
-                     ReservaServicio servicioreserva = new ReservaServicio();
+            try
+            {
+                HabitacionServicio serviciohabitacion = new HabitacionServicio();
+                HotelServicio serviciohotel = new HotelServicio();
+                ReservaServicio servicioreserva = new ReservaServicio();
 
                 if (dateTimePicker1.Value > DateTime.Today && dateTimePicker2.Value > dateTimePicker1.Value)
                 {
@@ -146,11 +164,11 @@ namespace Solucion.Formulario
                     MessageBox.Show("Ingrese una fecha futura.");
                 }
 
-                }
-                   catch (Exception ex)
-                   {
-                       MessageBox.Show(ex.Message);
-                   }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         
                }
 
@@ -162,6 +180,11 @@ namespace Solucion.Formulario
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

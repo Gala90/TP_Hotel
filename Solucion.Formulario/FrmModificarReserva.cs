@@ -21,6 +21,7 @@ namespace Solucion.Formulario
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Owner.Refresh();
             this.Owner.Show();
             this.Dispose();
         }
@@ -33,9 +34,12 @@ namespace Solucion.Formulario
                 HotelServicio serviciohotel = new HotelServicio();
                 ReservaServicio servicioreserva = new ReservaServicio();
 
+                if (dateTimePicker1.Value > DateTime.Today && dateTimePicker2.Value > dateTimePicker1.Value)
+                {
 
 
-                if (serviciohabitacion.validarDispo(Convert.ToInt32(comboBox1.Text), servicioreserva, serviciohabitacion, serviciohotel))
+
+                    if (serviciohabitacion.validarDispo(Convert.ToInt32(comboBox1.Text), servicioreserva, serviciohabitacion, serviciohotel))
                 {
 
                     ReservaServicio servicio = new ReservaServicio();
@@ -53,6 +57,12 @@ namespace Solucion.Formulario
                     MessageBox.Show("La habitacion seleccionada no se encuentra disponible.");
                 }
 
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese una fecha futura.");
+                }
+
             }
             catch (Exception ex)
             {
@@ -64,7 +74,6 @@ namespace Solucion.Formulario
         private void button2_Click(object sender, EventArgs e)
         {
             textCantidad.Clear();
-            textBox1.Clear();
             textBox3.Clear();
             comboBox1.SelectedIndex = -1;
             comboRes.SelectedIndex = -1;
@@ -73,19 +82,14 @@ namespace Solucion.Formulario
 
         private void FrmModificarReserva_Load(object sender, EventArgs e)
         {
-            List<string> listaHoteles = new List<string>();
+
             
             HotelServicio servicio = new HotelServicio();
-
             List<Hotel> lst = servicio.TraerHoteles();
 
-            foreach (Hotel Hotel in lst)
-            {
-                listaHoteles.Add(Hotel.id.ToString());
-                
-            }
-
-            comboID.DataSource = listaHoteles;
+            comboID.DataSource = lst;
+            comboID.DisplayMember = "Nombre";
+            comboID.ValueMember = "id";
 
 
 
@@ -104,41 +108,55 @@ namespace Solucion.Formulario
 
             comboRes.DataSource = listaReservas;
 
+
+
+
+            
+
         }
 
         private void ComboID_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            textBox1.Text = "";
-
-            List<string> listaHoteles = new List<string>();
-
-            HotelServicio servicio = new HotelServicio();
-
-            List<Hotel> lst = servicio.TraerHoteles();
-
-            foreach (Hotel Hotel in lst)
-            {
-                if (Hotel.id.ToString() == comboID.Text)
-                    textBox1.Text = Hotel.nombre;
-            }
-
-
-
-            List<string> listaHabitaciones = new List<string>();
+            
+            //List<string> listaHabitaciones = new List<string>();
 
             HabitacionServicio serviciohabitacion = new HabitacionServicio();
 
-            List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(Convert.ToInt32(comboID.Text));
+            List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(Convert.ToInt32(comboID.ValueMember));
 
+            /*
             foreach (Habitacion h in lsthab)
             {
                 listaHabitaciones.Add(h.id.ToString());
             }
 
-            comboBox1.DataSource = listaHabitaciones;
+            */
+            
+
+            comboBox1.DataSource = lsthab;
+            comboBox1.DisplayMember = "id";
+            comboBox1.ValueMember = "id";
+
+            
+
         }
 
+        /*
+        private void comboBox1_Load(object sender, EventArgs e)
+        {
+      myservice.Service test = new myservice.Service();
+    DataSet dd = new DataSet();
+    dd = test.Cmb_BranchMaster();
+    comboBox1.DataSource = dd.Tables[0];
+    comboBox1.DisplayMember = "BranchName";
+    comboBox1.ValueMember = "BranchID";
+        }
+        */
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

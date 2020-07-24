@@ -32,6 +32,7 @@ namespace Datos
             n.Add("direccion", p.direccion.ToString());
             n.Add("estrellas", p.estrellas.ToString());
             n.Add("amenities", p.amenities.ToString());
+            n.Add("id", p.id.ToString());
 
             return n;
         }
