@@ -44,6 +44,7 @@ namespace Datos
             n.Add("FechaAlta", cliente.FechaAlta.ToString());           
             n.Add("Activo", cliente.Activo.ToString());
             n.Add("Usuario", ConfigurationManager.AppSettings["Legajo"]);
+            n.Add("id", cliente.Id.ToString());
             return n;
         }
 

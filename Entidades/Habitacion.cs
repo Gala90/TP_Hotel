@@ -80,11 +80,11 @@ namespace Entidades
         {
             if (this._cancelacion == true)
             {
-                return "Id: " + id + " Hotel: " + this.idhotel + "  Categoria: " + this.categoria + " Cantidad: " + this.cantidadplazas + " reembolsable Precio: " + this.precio;
+                return "Id: " + this.id + " Hotel: " + this.idhotel + "  Categoria: " + this.categoria + " Cantidad: " + this.cantidadplazas + " reembolsable Precio: " + this.precio;
             }
             else
             {
-                return "Id: " + id + " Hotel: " + this.idhotel + "  Categoria: " + this.categoria + " Cantidad: " + this.cantidadplazas + " no reembolsable Precio: " + this.precio;
+                return "Id: " + this.id + " Hotel: " + this.idhotel + "  Categoria: " + this.categoria + " Cantidad: " + this.cantidadplazas + " no reembolsable Precio: " + this.precio;
             }
         }
     }

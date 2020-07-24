@@ -46,6 +46,16 @@ namespace Solucion.Formulario
 
 
 
+            ClienteServicio serviciocliente = new ClienteServicio();
+            List<Cliente> clientes = serviciocliente.TraerClientes();
+
+            comboBox3.DataSource = clientes;
+            comboBox3.DisplayMember = "NombreCompleto";
+            comboBox3.ValueMember = "id";
+
+
+
+
 
         }
 
@@ -79,20 +89,25 @@ namespace Solucion.Formulario
             */
 
 
-               // List<int> listaHabitaciones = new List<int>();
+                //List<int> listaHabitaciones = new List<int>();
 
                 HabitacionServicio serviciohabitacion = new HabitacionServicio();
-                List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(Convert.ToInt32(comboBox2.SelectedValue.ToString()));
 
-                if (comboBox2.SelectedIndex > -1)
-            {     
-                comboBox1.DataSource = null;
+                Hotel hotelseleccionado = (Hotel)comboBox2.SelectedItem;
+                List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(hotelseleccionado.id);
+
                 comboBox1.DataSource = lsthab;
 
 
-                // comboBox1.DisplayMember = "id";
-                // comboBox1.ValueMember = "id";
-            }
+
+
+
+
+
+
+            // comboBox1.DisplayMember = "id";
+            // comboBox1.ValueMember = "id";
+
 
 
 
@@ -120,7 +135,7 @@ namespace Solucion.Formulario
             
             textCantidad.Clear();
             //textBox1.Clear();
-            textBox3.Clear();
+            comboBox3.SelectedIndex = -1;
             comboBox1.SelectedIndex = -1;
 
 
@@ -145,7 +160,7 @@ namespace Solucion.Formulario
 
                         ReservaServicio servicio = new ReservaServicio();
 
-                        servicio.Agregar_Reserva(Convert.ToInt32(comboBox1.Text), Convert.ToInt32(textBox3.Text), Convert.ToInt32(textCantidad.Text), Convert.ToDateTime(dateTimePicker1.Value), Convert.ToDateTime(dateTimePicker2.Value));
+                        servicio.Agregar_Reserva(Convert.ToInt32(comboBox1.Text.ToString()), Convert.ToInt32(comboBox3.SelectedValue.ToString()), Convert.ToInt32(textCantidad.Text), Convert.ToDateTime(dateTimePicker1.Value), Convert.ToDateTime(dateTimePicker2.Value));
                         MessageBox.Show("La reserva ha sido creada con exito.");
 
 

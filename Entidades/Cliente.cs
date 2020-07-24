@@ -15,7 +15,7 @@ namespace Entidades
         private string _direccion;
         private string _email;
         private string _telefono;
-        private int _codigo;
+        private int _id;
         private DateTime _fechaAlta;
         private bool _activo;
 
@@ -37,7 +37,7 @@ namespace Entidades
         public string Telefono { get => _telefono; set => _telefono = value; }
 
         [DataMember]
-        public int Codigo { get => _codigo; set => _codigo = value; }
+        public int Id { get => _id; set => _id = value; }
 
         [DataMember]
         public DateTime FechaAlta { get => _fechaAlta; set => _fechaAlta = value; }
@@ -48,6 +48,14 @@ namespace Entidades
         public override string ToString()
         {
             return string.Format("Cliente {0}, {1}", this._apellido, this._nombre);
+        }
+
+        public string NombreCompleto
+        {
+            get
+            {
+                return string.Format(this._apellido +", " + this._nombre);
+            }
         }
     }
 }
