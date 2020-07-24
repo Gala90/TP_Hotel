@@ -57,5 +57,13 @@ namespace Solucion.Formulario
             this.Hide();
 
         }
+
+        private void btnBajaReserva_Click(object sender, EventArgs e)
+        {
+            FrmBajaReserva f2 = new FrmBajaReserva();
+            f2.Owner = this;
+            f2.Show();
+            this.Hide();
+        }
     }
 }

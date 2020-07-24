@@ -47,16 +47,17 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(152, 224);
+            this.button2.Location = new System.Drawing.Point(37, 178);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 25);
+            this.button2.Size = new System.Drawing.Size(174, 41);
             this.button2.TabIndex = 33;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(25, 224);
+            this.button1.Location = new System.Drawing.Point(12, 246);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 25);
             this.button1.TabIndex = 32;
@@ -67,7 +68,7 @@
             // comboID
             // 
             this.comboID.FormattingEnabled = true;
-            this.comboID.Location = new System.Drawing.Point(78, 91);
+            this.comboID.Location = new System.Drawing.Point(80, 96);
             this.comboID.Name = "comboID";
             this.comboID.Size = new System.Drawing.Size(92, 21);
             this.comboID.TabIndex = 31;
@@ -85,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(270, 283);
+            this.ClientSize = new System.Drawing.Size(246, 283);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -93,6 +94,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmBajaReserva";
             this.Text = "FrmBajaReserva";
+            this.Load += new System.EventHandler(this.FrmBajaReserva_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

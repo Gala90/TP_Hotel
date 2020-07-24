@@ -50,11 +50,15 @@ namespace Solucion.Consola
                  Console.WriteLine("Reserva: " + id);
 
                  
-                */
+                
 
                 int id = servicio.Modificar_Reserva(27,7, 84, 2, DateTime.Today.AddDays(1), DateTime.Today.AddDays(3));
                 Console.WriteLine("Reserva: " + id);
 
+                */
+
+                int id = servicio.Cancelar_Reserva(15);
+                Console.WriteLine("Reserva eliminada: " + id);
 
 
 

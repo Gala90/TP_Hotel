@@ -64,6 +64,7 @@
             this.btnBajaReserva.TabIndex = 4;
             this.btnBajaReserva.Text = "Cancelar";
             this.btnBajaReserva.UseVisualStyleBackColor = true;
+            this.btnBajaReserva.Click += new System.EventHandler(this.btnBajaReserva_Click);
             // 
             // btnModifReserva
             // 

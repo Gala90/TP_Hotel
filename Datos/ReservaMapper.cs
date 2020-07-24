@@ -62,6 +62,17 @@ namespace Datos
             return resultado;
         }
 
+        public ResultadoTransaccion Delete(Reserva reserva)
+        {
+            NameValueCollection obj = new NameValueCollection();
+            obj.Add("id", reserva.id.ToString());
+            string result = WebHelper.Delete("/api/v1/Hotel/Reservas", obj);
+
+            ResultadoTransaccion resultadoTransaccion = MapResultado(result);
+
+            return resultadoTransaccion;
+        }
+
 
 
     }

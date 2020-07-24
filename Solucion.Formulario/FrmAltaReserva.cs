@@ -89,11 +89,15 @@ namespace Solucion.Formulario
                     listaHabitaciones.Add(h.id);
                 }
             */
-
+                if (comboBox2.SelectedIndex > -1)
+            {     
+                comboBox1.DataSource = null;
                 comboBox1.DataSource = lsthab;
-                comboBox1.DisplayMember = "categoria";
-                comboBox1.ValueMember = "id";
-                
+
+
+                // comboBox1.DisplayMember = "id";
+                // comboBox1.ValueMember = "id";
+            }
 
 
 

@@ -63,7 +63,7 @@ namespace Solucion.Negocio
                 reserva.cantidadhuespedes = cantidadhuespedes;
                 reserva.fecha_ingreso = fecha_ingreso;
                 reserva.fecha_egreso = fecha_egreso;
-                
+
 
 
                 ResultadoTransaccion resultante = mapper.Update(reserva);
@@ -79,6 +79,19 @@ namespace Solucion.Negocio
             {
                 throw new Exception("Reserva Inexistente");
             }
+
+        }
+
+        public int Cancelar_Reserva(int idReserva)
+        {
+            Reserva reserva = TraerReserva(idReserva);
+
+            ResultadoTransaccion resultante = mapper.Delete(reserva);
+
+            if (resultante.IsOk)
+                return resultante.Id;
+            else
+                throw new Exception("Hubo un error en la petición al servidor. Detalle: " + resultante.Error);
 
         }
     }
