@@ -79,16 +79,11 @@ namespace Solucion.Formulario
             */
 
 
-
                // List<int> listaHabitaciones = new List<int>();
+
                 HabitacionServicio serviciohabitacion = new HabitacionServicio();
                 List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(Convert.ToInt32(comboBox2.SelectedValue.ToString()));
-            /*
-                foreach (Habitacion h in lsthab)
-                {
-                    listaHabitaciones.Add(h.id);
-                }
-            */
+
                 if (comboBox2.SelectedIndex > -1)
             {     
                 comboBox1.DataSource = null;
