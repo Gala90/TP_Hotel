@@ -69,49 +69,7 @@ namespace Solucion.Formulario
 
         }
 
-        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-            /*
-            List<string> listaHabitaciones = new List<string>();
-
-            HabitacionServicio serviciohabitacion = new HabitacionServicio();
-
-            List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(Convert.ToInt32(comboBox2.SelectedValue.ToString()));
-
-            foreach (Habitacion h in lsthab)
-            {
-                listaHabitaciones.Add(h.id.ToString());
-            }
-
-            comboBox1.DataSource = listaHabitaciones;
-            */
-
-
-                //List<int> listaHabitaciones = new List<int>();
-
-                HabitacionServicio serviciohabitacion = new HabitacionServicio();
-
-                Hotel hotelseleccionado = (Hotel)comboBox2.SelectedItem;
-                List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(hotelseleccionado.id);
-
-                comboBox1.DataSource = lsthab;
-
-
-
-
-
-
-
-
-            // comboBox1.DisplayMember = "id";
-            // comboBox1.ValueMember = "id";
-
-
-
-
-        }
+        
 
         private void Label2_Click(object sender, EventArgs e)
         {
@@ -200,6 +158,19 @@ namespace Solucion.Formulario
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+            HabitacionServicio serviciohabitacion = new HabitacionServicio();
+
+            Hotel hotelseleccionado = (Hotel)comboBox2.SelectedItem;
+            List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(hotelseleccionado.id);
+
+            comboBox1.DataSource = lsthab;
+            comboBox1.DisplayMember = "id";
 
         }
     }

@@ -49,5 +49,21 @@ namespace Solucion.Formulario
             servicio.Cancelar_Reserva(Convert.ToInt32(comboID.Text));
             MessageBox.Show("La reserva ha sido eliminada con exito.");
         }
+
+        private void comboID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ReservaServicio servicio = new ReservaServicio();
+
+            List<Reserva> lst = servicio.TraerReservas();
+
+            foreach (Reserva reserva in lst)
+            {
+                if (comboID.Text == reserva.id.ToString())
+                {
+                    textBox1.Text = reserva.ToString();
+                }
+
+            }
+        }
     }
 }

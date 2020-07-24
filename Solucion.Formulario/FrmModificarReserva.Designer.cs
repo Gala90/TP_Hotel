@@ -34,7 +34,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.comboRes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -46,6 +45,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.textCantidad = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label8
@@ -106,13 +106,6 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "ID Reserva";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(169, 165);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(105, 20);
-            this.textBox3.TabIndex = 61;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -147,6 +140,7 @@
             this.comboID.Name = "comboID";
             this.comboID.Size = new System.Drawing.Size(105, 21);
             this.comboID.TabIndex = 26;
+            this.comboID.SelectedIndexChanged += new System.EventHandler(this.comboID_SelectedIndexChanged_1);
             // 
             // label9
             // 
@@ -208,14 +202,24 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(105, 21);
             this.comboBox1.TabIndex = 62;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(169, 165);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(105, 21);
+            this.comboBox2.TabIndex = 63;
             // 
             // FrmModificarReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(313, 489);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
@@ -248,7 +252,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboRes;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -260,5 +263,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textCantidad;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

@@ -74,9 +74,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(22, 158);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Categoria";
+            this.label3.Text = "Estrellas";
             this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // textBox2
@@ -117,9 +117,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(26, 257);
+            this.button3.Location = new System.Drawing.Point(26, 246);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(209, 24);
+            this.button3.Size = new System.Drawing.Size(209, 35);
             this.button3.TabIndex = 13;
             this.button3.Text = "Crear";
             this.button3.UseVisualStyleBackColor = true;

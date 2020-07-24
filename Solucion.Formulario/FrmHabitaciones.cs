@@ -68,6 +68,8 @@ namespace Solucion.Formulario
 
             comboBox1.DataSource = listaHoteles;
 
+
+
         }
 
 

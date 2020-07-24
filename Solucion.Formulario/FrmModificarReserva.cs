@@ -44,7 +44,7 @@ namespace Solucion.Formulario
 
                     ReservaServicio servicio = new ReservaServicio();
 
-                    servicio.Modificar_Reserva(Convert.ToInt32(comboRes.Text), Convert.ToInt32(comboBox1.Text), Convert.ToInt32(textBox3.Text), Convert.ToInt32(textCantidad.Text), Convert.ToDateTime(dateTimePicker1.Value), Convert.ToDateTime(dateTimePicker2.Value));
+                    servicio.Modificar_Reserva(Convert.ToInt32(comboRes.Text), Convert.ToInt32(comboBox1.Text), Convert.ToInt32(comboBox2.Text), Convert.ToInt32(textCantidad.Text), Convert.ToDateTime(dateTimePicker1.Value), Convert.ToDateTime(dateTimePicker2.Value));
                     MessageBox.Show("La reserva ha sido modificada con exito.");
 
 
@@ -74,7 +74,7 @@ namespace Solucion.Formulario
         private void button2_Click(object sender, EventArgs e)
         {
             textCantidad.Clear();
-            textBox3.Clear();
+            comboBox2.SelectedIndex = -1;
             comboBox1.SelectedIndex = -1;
             comboRes.SelectedIndex = -1;
             comboID.SelectedIndex = -1;
@@ -109,9 +109,17 @@ namespace Solucion.Formulario
             comboRes.DataSource = listaReservas;
 
 
+            ClienteServicio serviciocliente = new ClienteServicio();
+            List<Cliente> clientes = serviciocliente.TraerClientes();
+
+            comboBox2.DataSource = clientes;
+            comboBox2.DisplayMember = "NombreCompleto";
+            comboBox2.ValueMember = "id";
 
 
-            
+
+
+
 
         }
 
@@ -154,6 +162,22 @@ namespace Solucion.Formulario
         */
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboID_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            HabitacionServicio serviciohabitacion = new HabitacionServicio();
+
+            Hotel hotelseleccionado = (Hotel)comboID.SelectedItem;
+            List<Habitacion> lsthab = serviciohabitacion.TraerHabitaciones(hotelseleccionado.id);
+
+            comboBox1.DataSource = lsthab;
+            comboBox1.DisplayMember = "id";
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -133,6 +133,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(176, 195);
             this.comboBox1.Name = "comboBox1";
@@ -184,6 +185,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(105, 21);
             this.comboBox2.TabIndex = 36;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged_1);
             // 
             // comboBox3
             // 
@@ -191,14 +193,14 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(178, 121);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(102, 21);
+            this.comboBox3.Size = new System.Drawing.Size(103, 21);
             this.comboBox3.TabIndex = 38;
             // 
             // FrmAltaReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 451);
+            this.ClientSize = new System.Drawing.Size(321, 462);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label6);
