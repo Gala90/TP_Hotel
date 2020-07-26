@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="ReservaAdapter.cs" />
     <Compile Include="ResultadoTransaccion.cs" />
     <Compile Include="Reserva.cs" />
     <Compile Include="Habitacion.cs" />

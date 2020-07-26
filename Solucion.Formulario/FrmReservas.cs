@@ -27,18 +27,9 @@ namespace Solucion.Formulario
 
         private void FrmReservas_Load(object sender, EventArgs e)
         {
-            List<string> listareservas = new List<string>();
-
             ReservaServicio servicio = new ReservaServicio();
 
-            List<Reserva> lst = servicio.TraerReservas();
-
-            foreach (Reserva reserva in lst)
-            {
-                listareservas.Add(reserva.ToString());
-            }
-
-            listBox1.DataSource = listareservas;
+            listBox1.DataSource = servicio.TraerReservasAdapter();
         }
 
         private void BtnAltaReserva_Click(object sender, EventArgs e)

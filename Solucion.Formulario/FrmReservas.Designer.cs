@@ -38,7 +38,7 @@
             // 
             // BtnAltaReserva
             // 
-            this.BtnAltaReserva.Location = new System.Drawing.Point(58, 396);
+            this.BtnAltaReserva.Location = new System.Drawing.Point(99, 396);
             this.BtnAltaReserva.Name = "BtnAltaReserva";
             this.BtnAltaReserva.Size = new System.Drawing.Size(476, 46);
             this.BtnAltaReserva.TabIndex = 0;
@@ -58,7 +58,7 @@
             // 
             // btnBajaReserva
             // 
-            this.btnBajaReserva.Location = new System.Drawing.Point(58, 463);
+            this.btnBajaReserva.Location = new System.Drawing.Point(99, 463);
             this.btnBajaReserva.Name = "btnBajaReserva";
             this.btnBajaReserva.Size = new System.Drawing.Size(476, 45);
             this.btnBajaReserva.TabIndex = 4;
@@ -68,7 +68,7 @@
             // 
             // btnModifReserva
             // 
-            this.btnModifReserva.Location = new System.Drawing.Point(58, 527);
+            this.btnModifReserva.Location = new System.Drawing.Point(99, 528);
             this.btnModifReserva.Name = "btnModifReserva";
             this.btnModifReserva.Size = new System.Drawing.Size(476, 45);
             this.btnModifReserva.TabIndex = 5;
@@ -91,7 +91,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(29, 71);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(559, 316);
+            this.listBox1.Size = new System.Drawing.Size(613, 303);
             this.listBox1.TabIndex = 33;
             // 
             // FrmReservas

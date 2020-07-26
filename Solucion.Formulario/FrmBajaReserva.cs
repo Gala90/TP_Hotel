@@ -46,8 +46,16 @@ namespace Solucion.Formulario
         {
             ReservaServicio servicio = new ReservaServicio();
 
-            servicio.Cancelar_Reserva(Convert.ToInt32(comboID.Text));
-            MessageBox.Show("La reserva ha sido eliminada con exito.");
+            if (servicio.TraerCancelacion(Convert.ToInt32(comboID.Text)))
+            {
+                servicio.Cancelar_Reserva(Convert.ToInt32(comboID.Text));
+                MessageBox.Show("La reserva ha sido eliminada con exito.");
+            }
+            else
+            {
+                MessageBox.Show("La reserva no puede cancelarse, es no reembolsable.");
+            }
+
         }
 
         private void comboID_SelectedIndexChanged(object sender, EventArgs e)
