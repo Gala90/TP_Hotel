@@ -52,6 +52,7 @@ namespace Entidades
             set { this._idCliente = value; }
         }
 
+        [DataMember]
         public int cantidadhuespedes
         {
             get { return _cantidadhuespedes; }
@@ -59,6 +60,7 @@ namespace Entidades
             set { this._cantidadhuespedes = value; }
         }
 
+        [DataMember]
         public DateTime fecha_ingreso
         {
             get { return _fecha_ingreso; }
@@ -66,6 +68,7 @@ namespace Entidades
             set { this._fecha_ingreso = value; }
         }
 
+        [DataMember]
         public DateTime fecha_egreso
         {
             get { return _fecha_egreso; }
