@@ -61,8 +61,8 @@ namespace Solucion.Negocio
                 reserva.idHabitacion = idHabitacion;
                 reserva.idCliente = idCliente;
                 reserva.cantidadhuespedes = cantidadhuespedes;
-                reserva.fecha_ingreso = fecha_ingreso;
-                reserva.fecha_egreso = fecha_egreso;
+                reserva.fechaingreso = fecha_ingreso;
+                reserva.fechaegreso = fecha_egreso;
 
 
 
@@ -108,8 +108,8 @@ namespace Solucion.Negocio
                 ra.NombreHotel = TraerHotel(r.idHabitacion);
                 ra.CategoriaHabitacion = TraerCategoria(r.idHabitacion);
                 ra.CantidadHuespedes = r.cantidadhuespedes;                
-                //ra.FechaIngreso = r.fecha_ingreso;
-                //ra.FechaEgreso = r.fecha_egreso;
+                ra.FechaIngreso = r.fechaingreso;
+                ra.FechaEgreso = r.fechaegreso;
 
                 listaAdapter.Add(ra);
             }

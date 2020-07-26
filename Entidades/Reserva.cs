@@ -14,16 +14,16 @@ namespace Entidades
         private int _idHabitacion;
         private int _idCliente;
         private int _cantidadhuespedes;
-        private DateTime _fecha_ingreso;
-        private DateTime _fecha_egreso;
+        private DateTime _fechaingreso;
+        private DateTime _fechaegreso;
 
-        public Reserva (int idHabitacion, int idCliente, int cantidadhuespedes, DateTime fecha_ingreso, DateTime fecha_egreso)
+        public Reserva (int idHabitacion, int idCliente, int cantidadhuespedes, DateTime fechaingreso, DateTime fechaegreso)
         {
             this._idHabitacion = idHabitacion;
             this._idCliente = idCliente;
             this._cantidadhuespedes = cantidadhuespedes;
-            this._fecha_ingreso = fecha_ingreso;
-            this._fecha_egreso = fecha_egreso;
+            this._fechaingreso = fechaingreso;
+            this._fechaegreso = fechaegreso;
 
         }
 
@@ -61,19 +61,19 @@ namespace Entidades
         }
 
         [DataMember]
-        public DateTime fecha_ingreso
+        public DateTime fechaingreso
         {
-            get { return _fecha_ingreso; }
+            get { return _fechaingreso; }
 
-            set { this._fecha_ingreso = value; }
+            set { this._fechaingreso = value; }
         }
 
         [DataMember]
-        public DateTime fecha_egreso
+        public DateTime fechaegreso
         {
-            get { return _fecha_egreso; }
+            get { return _fechaegreso; }
 
-            set { this._fecha_egreso = value; }
+            set { this._fechaegreso = value; }
         }
 
         public override string ToString()

@@ -31,8 +31,8 @@ namespace Datos
             n.Add("idHabitacion", p.idHabitacion.ToString());
             n.Add("idCliente", p.idCliente.ToString());
             n.Add("CantidadHuespedes", p.cantidadhuespedes.ToString());
-            n.Add("FechaIngreso", p.fecha_ingreso.ToString());
-            n.Add("FechaEgreso", p.fecha_egreso.ToString());
+            n.Add("FechaIngreso", p.fechaingreso.ToString());
+            n.Add("FechaEgreso", p.fechaegreso.ToString());
             n.Add("id", p.id.ToString());
 
             return n;
