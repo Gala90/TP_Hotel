@@ -57,8 +57,8 @@ namespace Solucion.Consola
 
                 */
 
-                int id = servicio.Cancelar_Reserva(15);
-                Console.WriteLine("Reserva eliminada: " + id);
+                int id = servicio.Cancelar_Reserva(3);
+                Console.WriteLine("Reserva eliminada ");
 
 
 

@@ -51,7 +51,7 @@ namespace Solucion.Formulario
             {
                 HabitacionServicio servicio = new HabitacionServicio();
 
-                if (comboBox3.Text.ToUpper() == "Reembolsable")
+                if (comboBox3.Text == "Reembolsable")
                 {
                     servicio.Alta_Habitacion(Convert.ToInt32(comboBox4.SelectedValue.ToString()), comboBox1.Text.ToString(), Convert.ToInt32(textBox2.Text),true, Convert.ToDouble(textBox1.Text));
 

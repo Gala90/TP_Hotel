@@ -14,16 +14,16 @@ namespace Entidades
         private int _idhotel;
         private string _categoria;
         private int _cantidadplazas;
-        private bool _cancelacion;
+        private bool _cancelable;
         private double _precio;
 
 
-        public Habitacion(int idhotel, string categoria, int cantidadplazas, bool cancelacion, double precio)
+        public Habitacion(int idhotel, string categoria, int cantidadplazas, bool cancelable, double precio)
         {
             this._idhotel = idhotel;
             this._categoria = categoria;
             this._cantidadplazas = cantidadplazas;
-            this._cancelacion = cancelacion;
+            this._cancelable = cancelable;
             this._precio = precio;
         }
 
@@ -60,11 +60,11 @@ namespace Entidades
         }
 
         [DataMember]
-        public bool cancelacion
+        public bool cancelable
         {
-            get { return _cancelacion; }
+            get { return _cancelable; }
 
-            set { this._cancelacion = value; }
+            set { this._cancelable = value; }
         }
 
         [DataMember]
@@ -78,7 +78,7 @@ namespace Entidades
 
         public override string ToString()
         {
-            if (this._cancelacion == true)
+            if (this._cancelable == true)
             {
                 return "Id: " + this.id + " Hotel: " + this.idhotel + "  Categoria: " + this.categoria + " Cantidad: " + this.cantidadplazas + " reembolsable Precio: " + this.precio;
             }

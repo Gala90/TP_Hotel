@@ -32,7 +32,7 @@ namespace Datos
             n.Add("idHotel", p.idhotel.ToString());
             n.Add("categoria", p.categoria.ToString());
             n.Add("cantidadplazas", p.cantidadplazas.ToString());
-            n.Add("cancelacion", p.cancelacion.ToString());
+            n.Add("Cancelable", p.cancelable.ToString());
             n.Add("precio", p.precio.ToString());
             n.Add("id", p.id.ToString());
 

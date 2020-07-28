@@ -22,9 +22,9 @@ namespace Solucion.Negocio
             return result;
         }
 
-        public int Alta_Habitacion(int idhotel, string categoria, int cantidadplazas, bool cancelacion, double precio)
+        public int Alta_Habitacion(int idhotel, string categoria, int cantidadplazas, bool cancelable, double precio)
         {
-            Habitacion habitacion = new Habitacion(idhotel, categoria, cantidadplazas, cancelacion, precio);
+            Habitacion habitacion = new Habitacion(idhotel, categoria, cantidadplazas, cancelable, precio);
 
             ResultadoTransaccion resultante = mapper.Insert(habitacion);
 

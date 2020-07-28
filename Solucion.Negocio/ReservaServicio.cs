@@ -212,7 +212,7 @@ namespace Solucion.Negocio
             {
                 if (ha.id == id)
                 {
-                    can = ha.cancelacion;
+                    can = ha.cancelable;
                     return can;
                 }
             }
